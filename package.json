@@ -1,0 +1,16 @@
+{
+  "name": "auto-change-style",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wc47501",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "html2hscript": "^2.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "virtual-dom": "^2.1.1"
+  }
+}
