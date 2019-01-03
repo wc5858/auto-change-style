@@ -2,9 +2,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const parser = require('html2hscript');
 const h = require('virtual-dom/h');
 const createElement = require("virtual-dom/create-element");
-const fs = require("fs");
-const util = require('util');
-const readFile = util.promisify(fs.readFile);
+const seg = require('./src/segmentation/index');
 
 
 (async function example() {
@@ -17,11 +15,12 @@ const readFile = util.promisify(fs.readFile);
                 return console.error(err);
             }
             let node = createElement(eval(hscript))
-            console.log(node)
+            // console.log(node)
         });
-        let jq = readFile('./lib/block-o-matic/js/jquery-min.js').toString()
-        let bomlib = readFile('./lib/block-o-matic/js/bomlib.js').toString()
-        driver.executeScript(jq+bomlib+";startSegmentation(window,1,20,true)")
+        data = await seg(driver,{
+            pac:5
+        })
+        console.log(data)
         // await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN);
         // await driver.wait(until.titleIs('webdriver - Google Search'), 1000);
     } finally {
