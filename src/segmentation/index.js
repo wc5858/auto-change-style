@@ -2,7 +2,17 @@ const fs = require("fs")
 const util = require('util')
 const readFile = util.promisify(fs.readFile)
 
+const bomJsFile = ['jquery-min', 'polyk', 'crypto-js', 'rectlib', 'bomlib']
+const jsPromises = bomJsFile.map(async file => await readFile('./lib/mob/js/' + file + '.js'))
+let jsData = ''
 
+async function getJsData() {
+    let data = ''
+    for (let i of jsPromises) {
+        data += (await i).toString()
+    }
+    return data
+}
 
 module.exports = async function (driver,
     {
@@ -11,15 +21,15 @@ module.exports = async function (driver,
         pdc = 50, // pDC represents the maximum separation allowed between blocks
         returnType = 'wprima'
     } = {}) {
-    const bomJsFile = ['jquery-min', 'polyk', 'crypto-js', 'rectlib', 'bomlib']
-    let jsData = []
-    for (let i = 0; i < bomJsFile.length; i++) {
-        jsData[i] = (await readFile('./lib/mob/js/' + bomJsFile[i] + '.js')).toString()
+
+    if(jsData.length==0) {
+        jsData = await getJsData()
     }
+
     return await driver.executeScript(function () {
         // 这部分代码是在浏览器里面执行的，只能通过executeScript传递参数进去执行
         data = arguments[0]
-        eval(data.jsData.join(''))
+        eval(data.jsData)
         return startSegmentation(window, data.pac, data.pdc, data.returnType)
     }, {
             jsData,
