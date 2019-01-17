@@ -29,7 +29,11 @@ module.exports = async function (driver,
     return await driver.executeScript(function () {
         // 这部分代码是在浏览器里面执行的，只能通过executeScript传递参数进去执行
         data = arguments[0]
-        eval(data.jsData)
+        try {
+            eval(data.jsData)
+        } catch(e) {
+            console.log(e)
+        }
         return startSegmentation(window, data.pac, data.pdc, data.returnType)
     }, {
             jsData,
