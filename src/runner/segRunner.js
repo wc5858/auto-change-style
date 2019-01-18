@@ -45,7 +45,7 @@ module.exports = async function () {
                 saveImg(site + 'pac-' + i, imgData)
                 let hscript = await promisifiedParser(data)
                 let node = await createElement(eval(hscript))
-                await rebuild(driver,node,site)
+                // await rebuild(driver,node,site)
                 // checkStyle(node)
             // }
         }

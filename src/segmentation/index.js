@@ -1,18 +1,6 @@
-const fs = require("fs")
-const util = require('util')
-const readFile = util.promisify(fs.readFile)
+const getJsData = require('../util/getJsData')
 
-const bomJsFile = ['jquery-min', 'polyk', 'crypto-js', 'rectlib', 'bomlib']
-const jsPromises = bomJsFile.map(async file => await readFile('./lib/mob/js/' + file + '.js'))
-let jsData = ''
-
-async function getJsData() {
-    let data = ''
-    for (let i of jsPromises) {
-        data += (await i).toString()
-    }
-    return data
-}
+const bomJsFiles = ['./lib/mob/js/jquery-min', './lib/mob/js/polyk', './lib/crypto-js/crypto-js', './lib/mob/js/rectlib', './lib/mob/js/bomlib']
 
 module.exports = async function (driver,
     {
@@ -22,9 +10,7 @@ module.exports = async function (driver,
         returnType = 'wprima'
     } = {}) {
 
-    if(jsData.length==0) {
-        jsData = await getJsData()
-    }
+    const jsData = await getJsData(bomJsFiles,'bomJsFiles')
 
     return await driver.executeScript(function () {
         // 这部分代码是在浏览器里面执行的，只能通过executeScript传递参数进去执行
