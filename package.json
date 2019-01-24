@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node index --style",
+    "seg": "node index --autoseg"
   },
   "author": "wc47501",
   "license": "UNLICENSED",
   "dependencies": {
+    "commander": "^2.19.0",
     "html2hscript": "^2.0.1",
     "selenium-webdriver": "^4.0.0-alpha.1",
     "virtual-dom": "^2.1.1"

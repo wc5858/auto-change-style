@@ -1,6 +1,19 @@
+const program = require('commander');
 const segRunner = require('./src/runner/segRunner');
+const styleRunner = require('./src/runner/styleRunner');
 
-segRunner()
+program
+    .version('0.1.0')
+    .option('-s, --style', 'Add style')
+    .option('-a, --autoseg', 'Add autoseg')
+    .parse(process.argv);
+
+if(program.style) {
+    styleRunner()
+}
+if(program.autoseg) {
+    segRunner()
+}
 
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();
