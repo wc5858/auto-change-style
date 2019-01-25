@@ -3,7 +3,7 @@ module.exports = async function (driver,node,site) {
     var jsonNode = JSON.stringify(node)
     return await driver.executeScript(function () {
         // 这部分代码是在浏览器里面执行的，只能通过executeScript传递参数进去执行
-        data = arguments[0]
+        var data = arguments[0]
         try {
             console.log(data.node)
             location.href = "about:blank;"

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "style": "node index --style",
-    "seg": "node index --autoseg"
+    "seg": "node index --autoseg",
+    "change": "node index --change"
   },
   "author": "wc47501",
   "license": "UNLICENSED",

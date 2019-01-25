@@ -1,11 +1,13 @@
 const program = require('commander');
 const segRunner = require('./src/runner/segRunner');
 const styleRunner = require('./src/runner/styleRunner');
+const changeRunner = require('./src/runner/changeRunner');
 
 program
     .version('0.1.0')
     .option('-s, --style', 'Add style')
     .option('-a, --autoseg', 'Add autoseg')
+    .option('-c, --change', 'Add change')
     .parse(process.argv);
 
 if(program.style) {
@@ -13,6 +15,9 @@ if(program.style) {
 }
 if(program.autoseg) {
     segRunner()
+}
+if(program.change) {
+    changeRunner()
 }
 
 // (async function example() {

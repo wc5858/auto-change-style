@@ -1,12 +1,11 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const getStyle = require('../getStyle/index');
 const rebuild = require('../buildPage/index');
-const saveData = require('../util/saveData');
 // parser的回调格式和node异步方法的回调格式一致，故可以用promisify
 const parser = require('html2hscript');
 const util = require('util');
 const promisifiedParser = util.promisify(parser);
-const { mkdir } = require('../util/localFs');
+const { mkdir, mergeData, saveData } = require('../util/localFs');
 
 const h = require('virtual-dom/h');
 const createElement = require("virtual-dom/create-element");
@@ -24,26 +23,31 @@ const list = [
 ]
 
 module.exports = async function () {
-    let driver = await new Builder().forBrowser('chrome').build();
     try {
         for (let site of list) {
             if (!site.resolved) {
                 await mkdir('./data/' + site.site)
                 // 并行写法，会很卡，但是效率比较高
-                site.pages.forEach(async page => {
-                    let driver = await new Builder().forBrowser('chrome').build()
-                    await driver.get(site.protocol + '://' + site.root + page)
-                    let data = await getStyle(driver)
-                    await saveData(site.site + '/' + page, data)
-                    driver.quit()
-                })
-                // 串行写法
-                // for (let page of site.pages) {
+                // site.pages.forEach(async page => {
+                //     let driver = await new Builder().forBrowser('chrome').build()
                 //     await driver.get(site.protocol + '://' + site.root + page)
                 //     let data = await getStyle(driver)
-                //     await saveData(site.site + '-' + page, data)
-                // }
+                //     data = JSON.parse(data)
+                //     await saveData(site.site + '/' + page, data)
+                //     driver.quit()
+                // })
+                // 串行写法
+                let driver = await new Builder().forBrowser('chrome').build();
+                for (let page of site.pages) {
+                    console.log(site.protocol + '://' + site.root + page)
+                    await driver.get(site.protocol + '://' + site.root + page)
+                    let data = await getStyle(driver)
+                    data = JSON.parse(data)
+                    await saveData(site.site + '/' + page, data)
+                }
             }
+            mergeData(site.site)
+
         }
 
     } catch (e) {
