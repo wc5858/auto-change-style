@@ -39,7 +39,6 @@ module.exports = async function () {
                 // 串行写法
                 let driver = await new Builder().forBrowser('chrome').build();
                 for (let page of site.pages) {
-                    console.log(site.protocol + '://' + site.root + page)
                     await driver.get(site.protocol + '://' + site.root + page)
                     let data = await getStyle(driver)
                     data = JSON.parse(data)

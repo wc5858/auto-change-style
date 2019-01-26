@@ -4,11 +4,11 @@ const getJsData = require('../util/getJsData')
 
 module.exports = async function (driver, styleData) {
     // const jsData = await getJsData(bomJsFiles,'bomJsFiles')
-
+    // 传入styleData，在浏览器里执行脚本更换样式
     return await driver.executeScript(function () {
         var data = arguments[0]
-        console.log(data)
         var html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head><body>"
+        // 读取现有CSS数据
         function getLCSS(el) {
             var lcss = ""
             var cs = getComputedStyle(el)
@@ -32,6 +32,7 @@ module.exports = async function (driver, styleData) {
             }
             el.setAttribute("css_added", "true");
         }
+        // 替换CSS
         function replaceCSS(el) {
             var oldLCSS = getLCSS(el)
             var d = data.styleData.cssData[el.localName]
@@ -64,6 +65,7 @@ module.exports = async function (driver, styleData) {
                     }
                 }
                 set = [...set]
+                // 计算余弦夹角
                 let sumAiBi = 0
                 let sumAiAi = 0
                 let sumBiBi = 0
@@ -89,6 +91,7 @@ module.exports = async function (driver, styleData) {
         }
         addCSS(document.body)
         var all = document.body.getElementsByTagName("*")
+        // 对每个元素都进行处理
         for (var k = 0; k < all.length; k++) {
             replaceCSS(all[k])
         }

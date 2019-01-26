@@ -8,6 +8,7 @@ const writeFile = util.promisify(fs.writeFile);
 
 const dataPath = './data/'
 
+// 目录不存在时创建目录
 async function mkdir(path) {
     try {
         return await fsStat(path)
@@ -16,11 +17,15 @@ async function mkdir(path) {
     }
 }
 
+// 保存json数据
 async function saveData(name, data) {
     let json = JSON.stringify(data, null, 4)
     return await writeFile(dataPath + name + '.json', json, 'utf8')
 }
 
+// 合并多个json数据文件
+// 顺便计算权重
+// TODO：从功能内聚的角度来讲，最好把计算权重的部分拆分出来，不过权重算法可能要调整
 async function mergeData(site) {
     const cssData = {}
     function addData(tag, lcss) {

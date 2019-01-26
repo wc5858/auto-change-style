@@ -4,7 +4,7 @@ const getJsData = require('../util/getJsData')
 
 module.exports = async function (driver, returnType = 'cssdata') {
     // const jsData = await getJsData(bomJsFiles,'bomJsFiles')
-
+    // 浏览器执行脚本获取CSS信息
     return await driver.executeScript(function () {
         var data = arguments[0]
         var html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head><body>"
@@ -16,6 +16,7 @@ module.exports = async function (driver, returnType = 'cssdata') {
             }
             cssData[tag].add(lcss)
         }
+        // 获取CSS信息
         function getLCSS(el) {
             var lcss = ""
             var cs = getComputedStyle(el)
@@ -33,6 +34,7 @@ module.exports = async function (driver, returnType = 'cssdata') {
             body.removeChild(sameTagEl)
             return lcss
         }
+        // 把CSS信息添加到对应元素上
         function addCSS(el) {
             if (!el.hasAttribute("css_added")) {
                 el.setAttribute("style", getLCSS(el));
@@ -49,6 +51,7 @@ module.exports = async function (driver, returnType = 'cssdata') {
             cssData[k] = [...cssData[k]]
         }
         switch(returnType) {
+            // 返回结构化的css数据，或者返回抽取附带样式信息的html文本
             case 'cssdata': return JSON.stringify(cssData)
             case 'html': return html
         }
