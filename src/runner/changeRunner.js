@@ -23,7 +23,13 @@ module.exports = async function () {
     try {
         for (let site of list) {
             await driver.get('https://' + site)
-            let data = await change(driver, styleData)
+            let imgData = await driver.takeScreenshot()
+            saveImg(site + '-change-before', imgData)
+            let data = await change(driver, styleData, {
+                strategy: true
+            })
+            imgData = await driver.takeScreenshot()
+            saveImg(site + '-change-after', imgData)
             // let imgData = await driver.takeScreenshot()
             // saveImg(site + 'pac-' + i, imgData)
             // let hscript = await promisifiedParser(data)
