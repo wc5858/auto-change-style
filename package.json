@@ -12,6 +12,7 @@
   "author": "wc47501",
   "license": "UNLICENSED",
   "dependencies": {
+    "browserify": "^16.2.3",
     "commander": "^2.19.0",
     "html2hscript": "^2.0.1",
     "selenium-webdriver": "^4.0.0-alpha.1",

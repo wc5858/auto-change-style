@@ -28,6 +28,7 @@ async function saveData(name, data) {
 // TODO：从功能内聚的角度来讲，最好把计算权重的部分拆分出来，不过权重算法可能要调整
 async function mergeData(site) {
     const cssData = {}
+    const bgColorData = {}
     function addData(tag, lcss) {
         if (cssData[tag] == undefined) {
             cssData[tag] = new Set()
@@ -35,25 +36,47 @@ async function mergeData(site) {
         cssData[tag].add(lcss)
     }
     try {
+        let totalBgColorArea = 0
+        let totalBgColorTimes = 0
         let files = await readdir(dataPath + site)
         for (let file of files) {
             let data = await readFile(dataPath + site + '/' + file)
             data = JSON.parse(data)
-            for (let tag in data) {
-                for (let i of data[tag]) {
+            for (let tag in data.cssData) {
+                for (let i of data.cssData[tag]) {
                     if (i !== "") {
                         addData(tag, i)
                     }
                 }
             }
+            for (let color in data.bgColorData) {
+                let area = data.bgColorData[color].area
+                let times = data.bgColorData[color].times
+                if(bgColorData[color]){
+                    bgColorData[color].area+=area
+                    bgColorData[color].times+=times
+                } else {
+                    bgColorData[color]= {
+                        area:area,
+                        times:times
+                    }
+                }
+                totalBgColorArea += area
+                totalBgColorTimes += times
+            }
         }
         for (var k in cssData) {
             cssData[k] = [...cssData[k]]
+        }
+        for (var k in bgColorData) {
+            bgColorData[k].areaRatio = bgColorData[k].area / totalBgColorArea
+            bgColorData[k].timesRatio = bgColorData[k].times / totalBgColorTimes
         }
         const data = {
             cssData,
             tagWeight: {},
             cssWeight: {},
+            bgColorData
         }
         let count = 0;
         let cssCount = {};
