@@ -1,7 +1,5 @@
 const getJsData = require('../util/getJsData')
 const getBundle = require('../util/getBundle')
-const browserify = require('browserify')
-
 // const bomJsFiles = ['./lib/mob/js/jquery-min', './lib/mob/js/polyk', './lib/crypto-js/crypto-js', './lib/mob/js/rectlib', './lib/mob/js/bomlib']
 
 module.exports = async function (driver, returnType = 'mutidata') {
@@ -15,15 +13,16 @@ module.exports = async function (driver, returnType = 'mutidata') {
         let data = arguments[0]
         eval(data.bundle)
         let util = require('util')
-
-        let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head><body>"
         let cssData = {}
         let bgColorData = {}
+        const getCss = util.dealCss(cssData,bgColorData)
+
+        let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head><body>"
 
         // 把CSS信息添加到对应元素上
         function addCSS(el) {
             if (!el.hasAttribute("css_added")) {
-                el.setAttribute("style", util.dealCss(el,cssData,bgColorData));
+                el.setAttribute("style",getCss(el));
             }
             el.setAttribute("css_added", "true");
         }
