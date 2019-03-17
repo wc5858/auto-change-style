@@ -1,29 +1,15 @@
 const getJsData = require('../util/getJsData')
+const getBundle = require('../util/getBundle')
 const browserify = require('browserify')
 
 // const bomJsFiles = ['./lib/mob/js/jquery-min', './lib/mob/js/polyk', './lib/crypto-js/crypto-js', './lib/mob/js/rectlib', './lib/mob/js/bomlib']
-
-let bundle
 
 module.exports = async function (driver, returnType = 'mutidata') {
     // const jsData = await getJsData(bomJsFiles,'bomJsFiles')
     // 浏览器执行脚本获取CSS信息
 
     // 载入util，做browserUtil处理
-    if (!bundle) {
-        let b = browserify()
-        b.require('./src/util/browserUtil.js', { expose: 'util' })
-        //.pipe(process.stdout)
-        bundle = await new Promise(function (resolve, reject) {
-            b.bundle((err, res) => {
-                if (err) {
-                    reject(err)
-                } else {
-                    resolve(res.toString())
-                }
-            })
-        })
-    }
+    let bundle = getBundle('./src/util/browserUtil.js','util')
 
     return await driver.executeScript(function () {
         let data = arguments[0]
