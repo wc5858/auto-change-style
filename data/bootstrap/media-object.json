@@ -173,7 +173,8 @@
             ""
         ],
         "img": [
-            "border-bottom-color:rgb(51, 51, 51);border-left-color:rgb(51, 51, 51);border-right-color:rgb(51, 51, 51);border-top-color:rgb(51, 51, 51);color:rgb(51, 51, 51);cursor:pointer;font-size:13px;height:100px;line-height:18.2px;max-width:130px;outline-color:rgb(51, 51, 51);text-decoration:none solid rgb(51, 51, 51);text-decoration-color:rgb(51, 51, 51);width:130px;column-rule-color:rgb(51, 51, 51);perspective-origin:65px 50px;-webkit-text-emphasis-color:rgb(51, 51, 51);-webkit-text-fill-color:rgb(51, 51, 51);-webkit-text-stroke-color:rgb(51, 51, 51);transform-origin:65px 50px;caret-color:rgb(51, 51, 51);"
+            "border-bottom-color:rgb(51, 51, 51);border-left-color:rgb(51, 51, 51);border-right-color:rgb(51, 51, 51);border-top-color:rgb(51, 51, 51);color:rgb(51, 51, 51);cursor:pointer;font-size:13px;height:100px;line-height:18.2px;max-width:130px;outline-color:rgb(51, 51, 51);text-decoration:none solid rgb(51, 51, 51);text-decoration-color:rgb(51, 51, 51);width:130px;column-rule-color:rgb(51, 51, 51);perspective-origin:65px 50px;-webkit-text-emphasis-color:rgb(51, 51, 51);-webkit-text-fill-color:rgb(51, 51, 51);-webkit-text-stroke-color:rgb(51, 51, 51);transform-origin:65px 50px;caret-color:rgb(51, 51, 51);",
+            "display:none;font-size:13px;height:1px;line-height:18.2px;width:1px;perspective-origin:50% 50%;transform-origin:50% 50%;"
         ],
         "h2": [
             "height:134px;margin-top:48px;pointer-events:none;width:760.104px;perspective-origin:380.052px 67px;transform-origin:380.052px 67px;"
