@@ -2,12 +2,14 @@ const program = require('commander');
 const segRunner = require('./src/runner/segRunner');
 const styleRunner = require('./src/runner/styleRunner');
 const changeRunner = require('./src/runner/changeRunner');
+const cpRunner = require('./src/runner/cpRunner');
 
 program
     .version('0.1.0')
     .option('-s, --style', 'Add style')
     .option('-a, --autoseg', 'Add autoseg')
     .option('-c, --change', 'Add change')
+    .option('-p, --component', 'Add component')
     .parse(process.argv);
 
 if(program.style) {
@@ -19,7 +21,9 @@ if(program.autoseg) {
 if(program.change) {
     changeRunner()
 }
-
+if(program.component) {
+    cpRunner()
+}
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();
 //     try {

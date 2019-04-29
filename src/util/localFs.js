@@ -23,6 +23,11 @@ async function saveData(name, data) {
     return await writeFile(dataPath + name + '.json', json, 'utf8')
 }
 
+async function readJson(file) {
+    let data = await readFile(dataPath + file + '.json')
+    return JSON.parse(data)
+}
+
 // 合并多个json数据文件
 // 顺便计算权重
 // TODO：从功能内聚的角度来讲，最好把计算权重的部分拆分出来，不过权重算法可能要调整
@@ -115,5 +120,6 @@ async function mergeData(site) {
 module.exports = {
     mkdir,
     mergeData,
-    saveData
+    saveData,
+    readJson
 }

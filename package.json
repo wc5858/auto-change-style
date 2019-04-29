@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "style": "node index --style",
     "seg": "node index --autoseg",
-    "change": "node index --change"
+    "change": "node index --change",
+    "cp": "node index --component"
   },
   "author": "wc47501",
   "license": "UNLICENSED",

@@ -14,9 +14,9 @@ const list = [
     // 'www.google.com',
     // 'my.vultr.com',
     //'www.bilibili.com',
-    //'github.com',
+    'github.com',
     //'stackoverflow.com',
-    'news.ycombinator.com'
+    // 'news.ycombinator.com'
 ]
 
 function checkStyle(node) {
@@ -34,17 +34,17 @@ module.exports = async function () {
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         for (let site of list) {
-            let i =5
+            let i =3
             // for (let i = 1; i <= 10; i++) {
                 await driver.get('https://' + site);
                 let data = await seg(driver, {
                     pac: i,
                     returnType : 'wprima'
                 })
-                let imgData = await driver.takeScreenshot()
-                saveImg(site + 'pac-' + i, imgData)
-                let hscript = await promisifiedParser(data)
-                let node = await createElement(eval(hscript))
+                // let imgData = await driver.takeScreenshot()
+                // saveImg(site + 'pac-' + i, imgData)
+                // let hscript = await promisifiedParser(data)
+                // let node = await createElement(eval(hscript))
                 // await rebuild(driver,node,site)
                 // checkStyle(node)
             // }

@@ -9,18 +9,19 @@ function getCss(node) {
 
 function getNodeInfo(node){
     const data = {
+        bomtype: node.getAttribute('bomtype') || null,
         offsetWidth: node.offsetWidth,
         offsetHeight: node.offsetHeight,
         scrollWidth: node.scrollWidth,
         scrollHeight: node.scrollHeight,
         css: getCss(node),
         tag: node.tagName,
-        class: classList.value.split(' ')
+        class: node.classList.value.split(' ')
     }
     return data
 }
 
-function nodeFactory(node,options) {
+function nodeFactory(options) {
     return Object.assign({
         // children: []
     }, options || {})
@@ -55,6 +56,9 @@ function mergeChildren(tmp) {
             }
         }
     }
+    if(text) {
+        children.push(text)
+    }
     return children
 }
 
@@ -69,29 +73,35 @@ function createTree(domNode) {
         if(isExcluded(domNode)) {
             return null
         }
-        const children = []
+        const node = nodeFactory({
+            info: getNodeInfo(domNode)
+        })
+        let children = []
         for (const element of domNode.childNodes) {
-            const node = createTree(element)
-            if(node) {
-                children.push(node)
+            const i = createTree(element)
+            if(i) {
+                children.push(i)
             }
         }
         // 合并连续text节点
         children = mergeChildren(children)
-        if(text) {
-            children.push(text)
-        }
         if(children.length == 0) {
-            return null
+            if(node.info.offsetWidth * node.info.offsetHeight) {
+                node.type = 'empty'
+            } else {
+                return null
+            }
         } else if (children.length == 1 && typeof children[0] == 'string') {
-            return nodeFactory({
-                content: children[0]
-            })
+            node.type = 'text'
+            node.content = children[0]
         } else {
-            return nodeFactory({
-                children
-            })
-        }    
+            node.children = children
+        }
+        return node
     }
     return null
+}
+
+module.exports = {
+    createTree
 }
