@@ -3,6 +3,7 @@ const segRunner = require('./src/runner/segRunner');
 const styleRunner = require('./src/runner/styleRunner');
 const changeRunner = require('./src/runner/changeRunner');
 const cpRunner = require('./src/runner/cpRunner');
+const cpMapper = require('./src/runner/cpMapper');
 
 program
     .version('0.1.0')
@@ -10,6 +11,7 @@ program
     .option('-a, --autoseg', 'Add autoseg')
     .option('-c, --change', 'Add change')
     .option('-p, --component', 'Add component')
+    .option('-m, --mapper', 'Add mapper')
     .parse(process.argv);
 
 if(program.style) {
@@ -23,6 +25,9 @@ if(program.change) {
 }
 if(program.component) {
     cpRunner()
+}
+if(program.mapper) {
+    cpMapper()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();

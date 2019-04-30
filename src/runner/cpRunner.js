@@ -1,14 +1,6 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
-const getStyle = require('../getStyle/index');
-const rebuild = require('../buildPage/index');
-// parser的回调格式和node异步方法的回调格式一致，故可以用promisify
-const parser = require('html2hscript');
-const util = require('util');
-const promisifiedParser = util.promisify(parser);
-const { mkdir, mergeData, saveData } = require('../util/localFs');
+const { Builder } = require('selenium-webdriver');
+const { saveData } = require('../util/localFs');
 
-const h = require('virtual-dom/h');
-const createElement = require("virtual-dom/create-element");
 const seg = require('../segmentation/index');
 const cp = require('../util/component')
 const list = [
@@ -30,8 +22,6 @@ const list = [
     }
 ]
 
-const parallel = false
-
 module.exports = async function () {
     try {
         for (let site of list) {
@@ -44,8 +34,6 @@ module.exports = async function () {
                         pac: 4,
                         returnType: 'wprima'
                     })
-                    // console.log(data)
-                    // let node = JSON.parse(data)
                     cp.getCp(map, node)
                 }
                 await saveData(`${site.site}-cps`, map)
@@ -54,8 +42,7 @@ module.exports = async function () {
 
     } catch (e) {
         console.log(e)
-    }
-    finally {
+    } finally {
         // await driver.quit();
     }
 }
