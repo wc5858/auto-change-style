@@ -27,7 +27,9 @@ module.exports = async function (driver,
         var domTree = require('domTree')
         // 执行分片
         startSegmentation(window, data.pac, data.pdc, data.returnType)
-        return domTree.createTree(document.body)
+        let node = domTree.createTree(document.body)
+        console.log(node)
+        return node
     }, {
             jsData,
             bundle,

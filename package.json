@@ -9,7 +9,8 @@
     "seg": "node index --autoseg",
     "change": "node index --change",
     "cp": "node index --component",
-    "map": "node index --mapper"
+    "map": "node index --mapper",
+    "rebuild": "node index --rebuild"
   },
   "author": "wc47501",
   "license": "UNLICENSED",

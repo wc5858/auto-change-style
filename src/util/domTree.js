@@ -7,7 +7,17 @@ function getCss(node) {
     return css
 }
 
-function getNodeInfo(node){
+function mergeCss(css) {
+    let cssString = ''
+    for (const i in css) {
+        if (css.hasOwnProperty(i)) {
+            cssString += `${i}:${css[i]};`
+        }
+    }
+    return cssString
+}
+
+function getNodeInfo(node) {
     const data = {
         bomtype: node.getAttribute('bomtype') || null,
         offsetWidth: node.offsetWidth,
@@ -17,6 +27,9 @@ function getNodeInfo(node){
         css: getCss(node),
         tag: node.tagName,
         class: node.classList.value.split(' ')
+    }
+    if(data.tag == 'IMG') {
+        data.src = node.getAttribute('src')
     }
     return data
 }
@@ -45,18 +58,18 @@ function mergeChildren(tmp) {
     const children = []
     let text = ''
     for (let i of tmp) {
-        if(typeof i == 'string') {
+        if (typeof i == 'string') {
             text += i
         } else {
-            if(text) {
-                children.push(text,i)
+            if (text) {
+                children.push(text, i)
                 text = ''
             } else {
                 children.push(i)
             }
         }
     }
-    if(text) {
+    if (text) {
         children.push(text)
     }
     return children
@@ -67,10 +80,10 @@ function createTree(domNode) {
         return null
     }
     if (isText(domNode)) {
-        return domNode.textContent.trim() || null
+        return domNode.textContent || null
     }
-    if(isElement(domNode)) {
-        if(isExcluded(domNode)) {
+    if (isElement(domNode)) {
+        if (isExcluded(domNode)) {
             return null
         }
         const node = nodeFactory({
@@ -79,14 +92,14 @@ function createTree(domNode) {
         let children = []
         for (const element of domNode.childNodes) {
             const i = createTree(element)
-            if(i) {
+            if (i) {
                 children.push(i)
             }
         }
         // 合并连续text节点
         children = mergeChildren(children)
-        if(children.length == 0) {
-            if(node.info.offsetWidth * node.info.offsetHeight) {
+        if (children.length == 0) {
+            if (node.info.offsetWidth * node.info.offsetHeight) {
                 node.type = 'empty'
             } else {
                 return null
@@ -102,6 +115,22 @@ function createTree(domNode) {
     return null
 }
 
+function rebuildHTML(treeNode) {
+    if (!treeNode) {
+        return ''
+    }
+    if (typeof treeNode == 'string') {
+        return treeNode
+    }
+    if (!treeNode.info) {
+        return ''
+    }
+    let innerHTML = treeNode.children ? treeNode.children.reduce((pre, cur) => pre + rebuildHTML(cur), '') : (treeNode.content ? treeNode.content : '')
+    const tag = treeNode.info.tag
+    return `<${tag} class="" ${tag == 'IMG' ? `src="${treeNode.info.src}"` :''} style='${mergeCss(treeNode.info.css)}'>${innerHTML}</${tag}>`
+}
+
 module.exports = {
-    createTree
+    createTree,
+    rebuildHTML
 }

@@ -4,6 +4,7 @@ const styleRunner = require('./src/runner/styleRunner');
 const changeRunner = require('./src/runner/changeRunner');
 const cpRunner = require('./src/runner/cpRunner');
 const cpMapper = require('./src/runner/cpMapper');
+const rebuild = require('./src/runner/rebuild');
 
 program
     .version('0.1.0')
@@ -12,6 +13,7 @@ program
     .option('-c, --change', 'Add change')
     .option('-p, --component', 'Add component')
     .option('-m, --mapper', 'Add mapper')
+    .option('-r, --rebuild', 'Add rebuild')
     .parse(process.argv);
 
 if(program.style) {
@@ -28,6 +30,9 @@ if(program.component) {
 }
 if(program.mapper) {
     cpMapper()
+}
+if(program.rebuild) {
+    rebuild()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();
