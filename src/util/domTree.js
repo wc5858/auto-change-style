@@ -28,7 +28,7 @@ function getNodeInfo(node) {
         tag: node.tagName,
         class: node.classList.value.split(' ')
     }
-    if(data.tag == 'IMG') {
+    if (data.tag == 'IMG') {
         data.src = node.getAttribute('src')
     }
     return data
@@ -80,6 +80,9 @@ function createTree(domNode) {
         return null
     }
     if (isText(domNode)) {
+        if (!domNode.textContent || domNode.textContent.trim() == '') {
+            return null
+        }
         return domNode.textContent || null
     }
     if (isElement(domNode)) {
@@ -127,7 +130,7 @@ function rebuildHTML(treeNode) {
     }
     let innerHTML = treeNode.children ? treeNode.children.reduce((pre, cur) => pre + rebuildHTML(cur), '') : (treeNode.content ? treeNode.content : '')
     const tag = treeNode.info.tag
-    return `<${tag} class="" ${tag == 'IMG' ? `src="${treeNode.info.src}"` :''} style='${mergeCss(treeNode.info.css)}'>${innerHTML}</${tag}>`
+    return `<${tag} class="" ${tag == 'IMG' ? `src="${treeNode.info.src}"` : ''} style='${mergeCss(treeNode.info.css)}'>${innerHTML}</${tag}>`
 }
 
 module.exports = {

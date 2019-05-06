@@ -15,7 +15,7 @@ module.exports = async function () {
         for (const key in d) {
             if (d.hasOwnProperty(key)) {
                 let r = cp.computeSimilarity(d[key],s)
-                if(r.max > 1.5) {
+                if(r.max > 0.5) {
                     result[key] = r.tag
                 } else {
                     result[key] = '0'

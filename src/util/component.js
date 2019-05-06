@@ -26,7 +26,7 @@ function outerSimilarity(cp, target) {
 }
 
 function selfSimilarity(cp, target) {
-    const weightTag = 1
+    const weightTag = 3
     const weightType = 1
     return (weightTag * (cp.tag == target.tag ? 1 : 0) + weightType * (cp.type == target.type ? 1 : 0)) / (weightTag + weightType)
 }
@@ -38,21 +38,31 @@ function innerSimilarity(cp, target) {
     if (!cp.children || !target.children) {
         return 0
     }
-    if (target.children.length < cp.children.length) {
+    // if (target.children.length < cp.children.length) {
+    //     return 0
+    // }
+    // let count = 0
+    // for (let i = 0; i < cp.children.length; i++) {
+    //     count += innerSimilarity(cp.children[i], target.children[i])
+    // }
+    // return count / cp.children.length
+    if (target.children.length != cp.children.length) {
         return 0
     }
-    let count = 0
     for (let i = 0; i < cp.children.length; i++) {
-        count += innerSimilarity(cp.children[i], target.children[i])
+        if (innerSimilarity(cp.children[i], target.children[i]) == 0) {
+            return 0
+        }
     }
-    return count / cp.children.length
+    return 1
 }
 
 function getSimilarity(cp, target) {
-    const weightInner = 1
-    const weightOuter = 1
-    const weightSelf = 1
-    return outerSimilarity(cp, target) * weightOuter + selfSimilarity(cp, target) * weightSelf + innerSimilarity(cp, target) * weightInner
+    // const weightInner = 1
+    // const weightOuter = 0
+    // const weightSelf = 0
+    // return outerSimilarity(cp, target) * weightOuter + selfSimilarity(cp, target) * weightSelf + innerSimilarity(cp, target) * weightInner
+    return innerSimilarity(cp, target) * selfSimilarity(cp, target)
 }
 
 function computeSimilarity(cp, sourceCps) {
@@ -60,8 +70,8 @@ function computeSimilarity(cp, sourceCps) {
     let tag = ''
     for (const key in sourceCps) {
         if (sourceCps.hasOwnProperty(key)) {
-            let tmp = getSimilarity(cp,sourceCps[key])
-            if(tmp > max) {
+            let tmp = getSimilarity(cp, sourceCps[key])
+            if (tmp > max) {
                 max = tmp
                 tag = key
             }
