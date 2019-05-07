@@ -1,5 +1,6 @@
 // 根据传入的virtual-dom重新构建页面
 // TODO：这块还没处理好
+// 更新todo：自己实现了一下domtree，提供了rebuild
 module.exports = async function (driver,node,site) {
     var jsonNode = JSON.stringify(node)
     return await driver.executeScript(function () {

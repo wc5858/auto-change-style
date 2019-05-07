@@ -42,7 +42,7 @@ function nodeFactory(options) {
 
 function isExcluded(node) {
     const excludeList = ["SCRIPT", "STYLE", "AREA", "HEAD", "META", "FRAME", "FRAMESET", "BR", "HR", "NOSCRIPT"]
-    return node ? (node.tagName || node.nodeName) in excludeList : false
+    return node ? excludeList.includes(node.tagName || node.localName) : false
 }
 
 function isText(node) {

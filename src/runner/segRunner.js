@@ -34,7 +34,7 @@ module.exports = async function () {
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         for (let site of list) {
-            let i =3
+            let i =1
             // for (let i = 1; i <= 10; i++) {
                 await driver.get('https://' + site);
                 let data = await seg(driver, {

@@ -19,6 +19,13 @@ const list = [
         root: 'github.com',
         pages: [''],
         resolved: false
+    },
+    {
+        site: 'element',
+        protocol: 'https',
+        root: 'element.eleme.cn',
+        pages: ['#/zh-CN/component/installation'],
+        resolved: true
     }
 ]
 
@@ -31,8 +38,9 @@ module.exports = async function () {
                 for (let page of site.pages) {
                     await driver.get(site.protocol + '://' + site.root + page)
                     let node = await seg(driver, {
-                        pac: 4,
-                        returnType: 'wprima'
+                        pac: 2,
+                        returnType: 'wprima',
+                        showBox: false
                     })
                     cp.getCp(map, node)
                 }

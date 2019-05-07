@@ -21,19 +21,45 @@ function getCp(map, node, parent, index) {
     }
 }
 
+function cssSimilarity(cp, target) {
+    if (!cp.info || !target.info) {
+        return typeof cp == typeof target ? 1 : 0
+    }
+    let sumAiBi = 0
+    let sumAiAi = 0
+    let sumBiBi = 0
+    for (const i in cp.info.css) {
+        if (cp.info.css.hasOwnProperty(i)) {
+            let a = 1
+            let b = 0
+            let here = cp.info.css[i]
+            let there = target.info.css[i]
+            if (there == undefined || here != there) {
+                b = 1
+            }
+            sumAiBi += a * b
+            sumAiAi += a * a
+            sumBiBi += b * b
+        }
+    }
+    let cos = sumAiBi / (Math.sqrt(sumAiAi) * Math.sqrt(sumBiBi))
+    return cos
+}
+
 function outerSimilarity(cp, target) {
     return 0
 }
 
 function selfSimilarity(cp, target) {
-    const weightTag = 3
+    // if()
+    const weightTag = 1
     const weightType = 1
-    return (weightTag * (cp.tag == target.tag ? 1 : 0) + weightType * (cp.type == target.type ? 1 : 0)) / (weightTag + weightType)
+    return (weightTag * (cp.info.tag == target.info.tag ? 1 : 0) + weightType * (cp.info.type == target.info.type ? 1 : 0)) / (weightTag + weightType)
 }
 
-function innerSimilarity(cp, target) {
+function innerSimilarity(cp, target, usingCssSimilarity) {
     if (!cp.children && !target.children) {
-        return 1
+        return usingCssSimilarity ? cssSimilarity(cp, target) : 1
     }
     if (!cp.children || !target.children) {
         return 0
@@ -54,23 +80,24 @@ function innerSimilarity(cp, target) {
             return 0
         }
     }
-    return 1
+    return usingCssSimilarity ? cssSimilarity(cp, target) : 1
 }
 
-function getSimilarity(cp, target) {
+function getSimilarity(cp, target, usingCssSimilarity) {
     // const weightInner = 1
     // const weightOuter = 0
     // const weightSelf = 0
     // return outerSimilarity(cp, target) * weightOuter + selfSimilarity(cp, target) * weightSelf + innerSimilarity(cp, target) * weightInner
-    return innerSimilarity(cp, target) * selfSimilarity(cp, target)
+    let res = innerSimilarity(cp, target, usingCssSimilarity) * selfSimilarity(cp, target)
+    return res
 }
 
-function computeSimilarity(cp, sourceCps) {
+function computeSimilarity(cp, sourceCps, usingCssSimilarity) {
     let max = 0
     let tag = ''
     for (const key in sourceCps) {
         if (sourceCps.hasOwnProperty(key)) {
-            let tmp = getSimilarity(cp, sourceCps[key])
+            let tmp = getSimilarity(cp, sourceCps[key], usingCssSimilarity)
             if (tmp > max) {
                 max = tmp
                 tag = key

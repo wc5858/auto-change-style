@@ -10,11 +10,17 @@ const list = [
         protocol: 'https',
         root: 'github.com'
     }
+    // {
+    //     site: 'element',
+    //     protocol: 'https',
+    //     root: 'element.eleme.cn/#/zh-CN/component/installation'
+    // }
 ]
 
 module.exports = async function () {
     try {
         let mapper = await readJson('github-cps&bootstrap-cps')
+        // let mapper = await readJson('element-cps&bootstrap-cps')
         let data = await readJson('bootstrap-cps')
         for (let site of list) {
             let driver = await new Builder().forBrowser('chrome').build();
