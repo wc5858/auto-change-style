@@ -34,17 +34,20 @@ module.exports = async function () {
         for (let site of list) {
             if (!site.resolved) {
                 const map = {}
+                const leafMap = {}
                 let driver = await new Builder().forBrowser('chrome').build();
                 for (let page of site.pages) {
                     await driver.get(site.protocol + '://' + site.root + page)
                     let node = await seg(driver, {
-                        pac: 2,
+                        pac: 1,
                         returnType: 'wprima',
                         showBox: false
                     })
                     cp.getCp(map, node)
+                    cp.getLeaf(leafMap, node)
                 }
                 await saveData(`${site.site}-cps`, map)
+                await saveData(`${site.site}-leaf`, leafMap)
             }
         }
 

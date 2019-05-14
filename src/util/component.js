@@ -21,6 +21,7 @@ function getCp(map, node, parent, index) {
     }
 }
 
+
 function cssSimilarity(cp, target) {
     if (!cp.info || !target.info) {
         return typeof cp == typeof target ? 1 : 0

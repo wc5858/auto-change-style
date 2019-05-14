@@ -10,7 +10,9 @@
     "change": "node index --change",
     "cp": "node index --component",
     "map": "node index --mapper",
-    "rebuild": "node index --rebuild"
+    "rebuild": "node index --rebuild",
+    "rebuild2": "node index --rebuild2",
+    "getleaf": "node --max-old-space-size=4096 index --getleaf"
   },
   "author": "wc47501",
   "license": "UNLICENSED",
