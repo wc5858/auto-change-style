@@ -20,10 +20,13 @@ function mergeCss(css) {
 function getNodeInfo(node) {
     const data = {
         bomtype: node.getAttribute('bomtype') || null,
+        pre: node.getAttribute('parent'),
         offsetWidth: node.offsetWidth,
         offsetHeight: node.offsetHeight,
         scrollWidth: node.scrollWidth,
         scrollHeight: node.scrollHeight,
+        offsetLeft: node.offsetLeft,
+        offsetTop: node.offsetTop,
         css: getCss(node),
         tag: node.tagName,
         class: node.classList.value.split(' ')
@@ -130,7 +133,7 @@ function rebuildHTML(treeNode) {
     }
     let innerHTML = treeNode.children ? treeNode.children.reduce((pre, cur) => pre + rebuildHTML(cur), '') : (treeNode.content ? treeNode.content : '')
     const tag = treeNode.info.tag
-    return `<${tag} class="" ${tag == 'IMG' ? `src="${treeNode.info.src}"` : ''} style='${mergeCss(treeNode.info.css)}'>${innerHTML}</${tag}>`
+    return `<${tag} class="" parent="${treeNode.info.pre}" ${tag == 'IMG' ? `src="${treeNode.info.src}"` : ''} style='${mergeCss(treeNode.info.css)}'>${innerHTML}</${tag}>`
 }
 
 module.exports = {

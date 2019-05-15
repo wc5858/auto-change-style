@@ -3,7 +3,6 @@ const { rebuildHTML } = require('../util/domTree');
 const getBundle = require('../util/getBundle');
 const { readJson } = require('../util/localFs');
 
-const seg = require('../segmentation/index');
 const list = [
     {
         site: 'github',
@@ -16,6 +15,48 @@ const list = [
     //     root: 'element.eleme.cn/#/zh-CN/component/installation'
     // }
 ]
+
+
+
+const PRE_LIFE_CIRCLE = 'pre'
+const AFTER_LIFE_CIRCLE = 'aft'
+
+let countParentDiff = 0
+let count = 0
+
+function dealTree(node, parent, lifeCircle) {
+    if (!node || (typeof node == 'string')) {
+        return
+    }
+    if (!node.children) {
+        if (lifeCircle == AFTER_LIFE_CIRCLE){
+            count++
+        }
+        if (parent) {
+            let x = node.info.offsetLeft
+            let y = node.info.offsetTop
+            let w = node.info.offsetWidth
+            let h = node.info.offsetHeight
+            let X = parent.info.offsetLeft
+            let Y = parent.info.offsetTop
+            let W = parent.info.offsetWidth
+            let H = parent.info.offsetHeight
+            if (x >= X && y >= Y && (x + w) <= (X + W) && (y + h) <= (Y + H)) {
+                node.info[lifeCircle] = 1 //1代表父子关系
+            } else {
+                node.info[lifeCircle] = 0
+            }
+            console.log(node.info[PRE_LIFE_CIRCLE],node.info[AFTER_LIFE_CIRCLE])
+            if (lifeCircle == AFTER_LIFE_CIRCLE && node.info[PRE_LIFE_CIRCLE] != node.info[AFTER_LIFE_CIRCLE]) {
+                countParentDiff++
+            }
+        }
+    } else {
+        for (const i of node.children) {
+            dealTree(i, node, lifeCircle)
+        }
+    }
+}
 
 module.exports = async function () {
     try {
@@ -40,22 +81,44 @@ module.exports = async function () {
                     bundle
                 }
             )
+
+            let countLeaf = 0
+            let replaced = 0
+
             function doReplace(node) {
                 if (!node || (typeof node == 'string')) {
                     return
                 }
                 if (!node.children) {
+                    countLeaf++
                     let tag = node.info.tag
                     let cla = node.info.class
-                    if(source[tag]) {
+                    if (source[tag]) {
                         let mappedNode
-                        if(source[tag][cla]) {
-                            mappedNode = source[tag][cla]
-                        } else {
-                            let keys = Object.keys(source[tag])
-                            mappedNode = source[tag][keys[Math.floor(Math.random()*keys.length)]]
+                        // 随机选取
+                        // if(source[tag][cla]) {
+                        //     mappedNode = source[tag][cla]
+                        // } else {
+                        //     let keys = Object.keys(source[tag])
+                        //     mappedNode = source[tag][keys[Math.floor(Math.random()*keys.length)]]
+                        // }
+                        let tmp = null
+                        let min = Infinity
+                        for (const key in source[tag]) {
+                            if (source[tag].hasOwnProperty(key)) {
+                                const element = source[tag][key]
+                                let widthDiff = Math.abs(element.info.offsetWidth - node.info.offsetWidth) / node.info.offsetWidth
+                                let heightDiff = Math.abs(element.info.offsetHeight - node.info.offsetHeight) / node.info.offsetHeight
+                                if (widthDiff + heightDiff < min) {
+                                    min = widthDiff + heightDiff
+                                    tmp = element
+                                }
+                            }
                         }
-                        node.info.css = mappedNode.info.css
+                        if (tmp) {
+                            node.info.css = tmp.info.css
+                            replaced++
+                        }
                     }
                 } else {
                     for (const i of node.children) {
@@ -63,21 +126,33 @@ module.exports = async function () {
                     }
                 }
             }
+
+            dealTree(node, null, PRE_LIFE_CIRCLE)
+
             doReplace(node)
+            console.log(`${replaced} of ${countLeaf} has been replaced`)
+
             let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head>"
             html += rebuildHTML(node) + '</html>'
-            await driver.executeScript(function () {
+            let newNode = await driver.executeScript(function () {
                 var data = arguments[0]
                 try {
                     document.write(data.html)
+                    eval(data.bundle)
                 } catch (e) {
                     console.log(e)
                 }
-                return
+                var domTree = require('domTree')
+                let node = domTree.createTree(document.body)
+                console.log(node)
+                return node
             }, {
-                    html
+                    html,
+                    bundle
                 }
             )
+            dealTree(node, null, AFTER_LIFE_CIRCLE)
+            console.log(`${countParentDiff} of ${count} 改变了节点关系`)
         }
 
     } catch (e) {
