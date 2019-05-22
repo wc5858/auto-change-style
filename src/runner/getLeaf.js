@@ -9,7 +9,7 @@ const list = [
         pages: ['alerts', 'badge', 'breadcrumb', 'buttons', 'button-group', 'card', 'carousel',
             'collapse', 'dropdowns', 'forms', 'input-group', 'jumbotron', 'list-group', 'media-object',
             'modal', 'navs', 'navbar', 'pagination', 'popovers', 'progress', 'scrollspy', 'spinners', 'toasts', 'tooltips'],
-        resolved: true
+        resolved: false
     },
     {
         site: 'github',
@@ -35,8 +35,8 @@ function getLeaf(map, node) {
     }
     if (!node.children) {
         if (map[node.info.tag]) {
-            if(node.info.class) {
-                if(!map[node.info.tag][node.info.class]) {
+            if (node.info.class) {
+                if (!map[node.info.tag][node.info.class]) {
                     map[node.info.tag][node.info.class] = node
                 }
             } else {
@@ -44,7 +44,7 @@ function getLeaf(map, node) {
             }
         } else {
             map[node.info.tag] = {}
-            if(node.info.class) {
+            if (node.info.class) {
                 map[node.info.tag][node.info.class] = node
             } else {
                 map[node.info.tag][++id] = node
@@ -57,6 +57,21 @@ function getLeaf(map, node) {
     }
 }
 
+function compareWidth(n1, n2) {
+    if (!n1 || (typeof n1 == 'string')) {
+        return
+    }
+    if (!n1.children) {
+        if (n1.info.css.width != n2.info.css.width) {
+            n1.info.css.width = 'auto'
+        }
+    } else {
+        for (let i = 0; i < n1.children.length; i++) {
+            compareWidth(n1.children[i], n2.children[i])
+        }
+    }
+}
+
 module.exports = async function () {
     try {
         for (let site of list) {
@@ -65,6 +80,10 @@ module.exports = async function () {
                 let driver = await new Builder().forBrowser('chrome').build()
                 for (let page of site.pages) {
                     await driver.get(site.protocol + '://' + site.root + page)
+                    await driver.manage().window().setRect({
+                        height: 1000,
+                        width: 1200
+                    })
                     const bundle = getBundle('./src/util/domTree.js', 'domTree')
                     let node = await driver.executeScript(function () {
                         var data = arguments[0]
@@ -81,6 +100,26 @@ module.exports = async function () {
                             bundle
                         }
                     )
+                    await driver.manage().window().setRect({
+                        height: 1000,
+                        width: 1210
+                    })
+                    let node2 = await driver.executeScript(function () {
+                        var data = arguments[0]
+                        try {
+                            eval(data.bundle)
+                        } catch (e) {
+                            console.log(e)
+                        }
+                        var domTree = require('domTree')
+                        let node = domTree.createTree(document.body)
+                        console.log(node)
+                        return node
+                    }, {
+                            bundle
+                        }
+                    )
+                    compareWidth(node,node2)
                     getLeaf(leafMap, node)
                 }
                 await saveData(`${site.site}-leaf`, leafMap)

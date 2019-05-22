@@ -230,7 +230,7 @@
                     "position": "absolute",
                     "r": "0px",
                     "resize": "none",
-                    "right": "1218.67px",
+                    "right": "1153.33px",
                     "row-gap": "normal",
                     "rx": "auto",
                     "ry": "auto",
@@ -294,7 +294,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 48,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 16,
+                "pre": null,
                 "scrollHeight": 360,
                 "scrollWidth": 25,
                 "tag": "A"
@@ -589,7 +592,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 33,
+                "offsetLeft": 16,
+                "offsetTop": 19,
                 "offsetWidth": 32,
+                "pre": null,
                 "scrollHeight": 33,
                 "scrollWidth": 32,
                 "tag": "A"
@@ -896,7 +902,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -1197,7 +1206,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -1497,7 +1509,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 56,
+                "offsetLeft": 126,
+                "offsetTop": 0,
                 "offsetWidth": 71,
+                "pre": null,
                 "scrollHeight": 56,
                 "scrollWidth": 71,
                 "tag": "A"
@@ -1799,7 +1814,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -2097,7 +2115,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 945,
+                "offsetTop": 16,
                 "offsetWidth": 48,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 48,
                 "tag": "A"
@@ -2400,7 +2421,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 34,
+                "offsetLeft": 1009,
+                "offsetTop": 11,
                 "offsetWidth": 71,
+                "pre": null,
                 "scrollHeight": 32,
                 "scrollWidth": 69,
                 "tag": "A"
@@ -2697,7 +2721,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 25,
+                "offsetLeft": 211,
+                "offsetTop": 268,
                 "offsetWidth": 117,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -2994,7 +3021,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 759,
+                "offsetTop": 296,
                 "offsetWidth": 60,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -3290,7 +3320,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 862,
+                "offsetTop": 411,
                 "offsetWidth": 83,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -3588,7 +3621,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -3888,7 +3924,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 55,
+                "offsetLeft": 517,
+                "offsetTop": 798,
                 "offsetWidth": 135,
+                "pre": null,
                 "scrollHeight": 53,
                 "scrollWidth": 133,
                 "tag": "A"
@@ -3896,7 +3935,7 @@
             "type": "text"
         },
         "btn,btn-mktg,btn-transparent": {
-            "content": "Get tickets",
+            "content": "Watch live",
             "info": {
                 "bomtype": null,
                 "class": [
@@ -4117,7 +4156,7 @@
                     "padding-top": "16px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "58.5208px 27px",
+                    "perspective-origin": "57.7708px 27px",
                     "pointer-events": "auto",
                     "position": "relative",
                     "r": "0px",
@@ -4162,7 +4201,7 @@
                     "top": "0px",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "58.5208px 27px",
+                    "transform-origin": "57.776px 27px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0.2s",
@@ -4175,7 +4214,7 @@
                     "visibility": "visible",
                     "white-space": "nowrap",
                     "widows": "2",
-                    "width": "117.042px",
+                    "width": "115.552px",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -4186,9 +4225,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 54,
-                "offsetWidth": 117,
+                "offsetLeft": 511,
+                "offsetTop": 224,
+                "offsetWidth": 115,
+                "pre": null,
                 "scrollHeight": 52,
-                "scrollWidth": 115,
+                "scrollWidth": 113,
                 "tag": "A"
             },
             "type": "text"
@@ -4482,7 +4524,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 478,
+                "offsetTop": 6885,
                 "offsetWidth": 83,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -4777,7 +4822,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 21,
+                "offsetLeft": 16,
+                "offsetTop": 7095,
                 "offsetWidth": 84,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -5073,7 +5121,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
+                "offsetLeft": 419,
+                "offsetTop": 7131,
                 "offsetWidth": 52,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -5370,7 +5421,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
+                "offsetLeft": 609,
+                "offsetTop": 7164,
                 "offsetWidth": 50,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "A"
@@ -5675,7 +5729,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 56,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 110,
+                "pre": null,
                 "scrollHeight": 56,
                 "scrollWidth": 110,
                 "tag": "SUMMARY"
@@ -5976,7 +6033,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -6273,7 +6333,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -6570,7 +6633,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -6868,7 +6934,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -7164,7 +7233,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -7460,7 +7532,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 669,
+                "offsetTop": 278,
                 "offsetWidth": 111,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -7756,7 +7831,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 803,
+                "offsetTop": 278,
                 "offsetWidth": 105,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -8052,7 +8130,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 34,
+                "offsetLeft": 911,
+                "offsetTop": 278,
                 "offsetWidth": 377,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -8348,7 +8429,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 638,
+                "offsetTop": 296,
                 "offsetWidth": 116,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -8644,7 +8728,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 16,
+                "offsetLeft": 698,
+                "offsetTop": 429,
                 "offsetWidth": 269,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -8940,7 +9027,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 715,
+                "offsetTop": 867,
                 "offsetWidth": 13,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 13,
                 "tag": "SPAN"
@@ -9237,7 +9327,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
-                "offsetWidth": 155,
+                "offsetLeft": 843,
+                "offsetTop": 162,
+                "offsetWidth": 154,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -9533,7 +9626,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 32,
+                "offsetLeft": 17,
+                "offsetTop": 11,
                 "offsetWidth": 24,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -9761,7 +9857,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "118.333px 9px",
+                    "perspective-origin": "110.167px 9px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -9806,7 +9902,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "118.333px 9px",
+                    "transform-origin": "110.167px 9px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -9819,7 +9915,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "236.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -9830,9 +9926,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 18,
-                "offsetWidth": 237,
+                "offsetLeft": 16,
+                "offsetTop": 256,
+                "offsetWidth": 221,
+                "pre": null,
                 "scrollHeight": 18,
-                "scrollWidth": 237,
+                "scrollWidth": 221,
                 "tag": "SPAN"
             },
             "type": "text"
@@ -10126,7 +10225,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 21,
+                "offsetLeft": 16,
+                "offsetTop": 309,
                 "offsetWidth": 67,
+                "pre": null,
                 "scrollHeight": 21,
                 "scrollWidth": 67,
                 "tag": "SPAN"
@@ -10424,7 +10526,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 17,
+                "offsetLeft": 24,
+                "offsetTop": 126,
                 "offsetWidth": 177,
+                "pre": null,
                 "scrollHeight": 18,
                 "scrollWidth": 177,
                 "tag": "SPAN"
@@ -10720,7 +10825,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
+                "offsetLeft": 531,
+                "offsetTop": 67,
                 "offsetWidth": 149,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -11016,7 +11124,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
+                "offsetLeft": 531,
+                "offsetTop": 138,
                 "offsetWidth": 69,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -11312,7 +11423,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 19,
+                "offsetLeft": 531,
+                "offsetTop": 250,
                 "offsetWidth": 65,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SPAN"
@@ -11616,7 +11730,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "H4"
@@ -11919,7 +12036,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 36,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 213,
+                "pre": null,
                 "scrollHeight": 36,
                 "scrollWidth": 213,
                 "tag": "INPUT"
@@ -12216,7 +12336,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 46,
+                "offsetLeft": 593,
+                "offsetTop": 51,
                 "offsetWidth": 379,
+                "pre": null,
                 "scrollHeight": 44,
                 "scrollWidth": 377,
                 "tag": "INPUT"
@@ -12514,7 +12637,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 46,
+                "offsetLeft": 593,
+                "offsetTop": 139,
                 "offsetWidth": 379,
+                "pre": null,
                 "scrollHeight": 44,
                 "scrollWidth": 377,
                 "tag": "INPUT"
@@ -12743,7 +12869,7 @@
                     "padding-top": "10px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "134.333px 23px",
+                    "perspective-origin": "126.167px 23px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -12788,7 +12914,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "134.333px 23px",
+                    "transform-origin": "126.167px 23px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -12801,7 +12927,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "268.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -12812,9 +12938,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 46,
-                "offsetWidth": 269,
+                "offsetLeft": 32,
+                "offsetTop": 6797,
+                "offsetWidth": 252,
+                "pre": null,
                 "scrollHeight": 44,
-                "scrollWidth": 267,
+                "scrollWidth": 250,
                 "tag": "INPUT"
             },
             "type": "empty"
@@ -13042,7 +13171,7 @@
                     "padding-top": "10px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "134.333px 23px",
+                    "perspective-origin": "126.167px 23px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -13087,7 +13216,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "134.333px 23px",
+                    "transform-origin": "126.167px 23px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -13100,7 +13229,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "268.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -13111,9 +13240,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 46,
-                "offsetWidth": 269,
+                "offsetLeft": 317,
+                "offsetTop": 6797,
+                "offsetWidth": 252,
+                "pre": null,
                 "scrollHeight": 44,
-                "scrollWidth": 267,
+                "scrollWidth": 250,
                 "tag": "INPUT"
             },
             "type": "empty"
@@ -13409,7 +13541,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 20,
+                "offsetLeft": 213,
+                "offsetTop": 8,
                 "offsetWidth": 19,
+                "pre": null,
                 "scrollHeight": 20,
                 "scrollWidth": 19,
                 "src": "https://github.githubassets.com/images/search-key-slash.svg",
@@ -13709,7 +13844,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 25,
+                "offsetLeft": 30,
+                "offsetTop": 16,
                 "offsetWidth": 144,
+                "pre": null,
                 "scrollHeight": 25,
                 "scrollWidth": 144,
                 "src": "https://github.githubassets.com/images/modules/site/logos/airbnb-logo.png",
@@ -13887,7 +14025,7 @@
                     "grid-template-areas": "none",
                     "grid-template-columns": "none",
                     "grid-template-rows": "none",
-                    "height": "608.563px",
+                    "height": "573.146px",
                     "hyphens": "manual",
                     "image-rendering": "auto",
                     "isolation": "auto",
@@ -13938,7 +14076,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "327.448px 304.281px",
+                    "perspective-origin": "308.385px 286.573px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -13983,7 +14121,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "327.448px 304.281px",
+                    "transform-origin": "308.391px 286.573px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -13996,7 +14134,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "654.896px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -14006,10 +14144,13 @@
                     "z-index": "auto",
                     "zoom": "1"
                 },
-                "offsetHeight": 609,
-                "offsetWidth": 655,
-                "scrollHeight": 609,
-                "scrollWidth": 655,
+                "offsetHeight": 573,
+                "offsetLeft": 40,
+                "offsetTop": 40,
+                "offsetWidth": 617,
+                "pre": null,
+                "scrollHeight": 573,
+                "scrollWidth": 617,
                 "src": "https://github.githubassets.com/images/modules/site/home-illo-team.svg",
                 "tag": "IMG"
             },
@@ -14184,7 +14325,7 @@
                     "grid-template-areas": "none",
                     "grid-template-columns": "none",
                     "grid-template-rows": "none",
-                    "height": "183px",
+                    "height": "173.052px",
                     "hyphens": "manual",
                     "image-rendering": "auto",
                     "isolation": "auto",
@@ -14235,7 +14376,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "90.1979px 91.5px",
+                    "perspective-origin": "85.2917px 86.5208px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -14280,7 +14421,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "90.1979px 91.5px",
+                    "transform-origin": "85.2969px 86.526px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -14293,7 +14434,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "180.396px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -14303,10 +14444,13 @@
                     "z-index": "auto",
                     "zoom": "1"
                 },
-                "offsetHeight": 183,
-                "offsetWidth": 181,
-                "scrollHeight": 183,
-                "scrollWidth": 181,
+                "offsetHeight": 173,
+                "offsetLeft": 0,
+                "offsetTop": 0,
+                "offsetWidth": 171,
+                "pre": null,
+                "scrollHeight": 173,
+                "scrollWidth": 171,
                 "src": "https://github.githubassets.com/images/modules/site/home-illo-team-code.svg",
                 "tag": "IMG"
             },
@@ -14601,7 +14745,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 284,
+                "offsetLeft": 617,
+                "offsetTop": 3527,
                 "offsetWidth": 458,
+                "pre": null,
                 "scrollHeight": 284,
                 "scrollWidth": 458,
                 "src": "https://github.githubassets.com/images/modules/site/home-illo-business.png",
@@ -14897,7 +15044,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 53,
+                "offsetLeft": 21,
+                "offsetTop": 21,
                 "offsetWidth": 53,
+                "pre": null,
                 "scrollHeight": 53,
                 "scrollWidth": 53,
                 "src": "https://github.githubassets.com/images/modules/site/integrators/slackhq.png",
@@ -15009,7 +15159,7 @@
                     "border-top-right-radius": "0px",
                     "border-top-style": "none",
                     "border-top-width": "0px",
-                    "bottom": "1177px",
+                    "bottom": "797px",
                     "box-shadow": "none",
                     "box-sizing": "border-box",
                     "break-after": "auto",
@@ -15131,7 +15281,7 @@
                     "position": "absolute",
                     "r": "0px",
                     "resize": "none",
-                    "right": "1233.67px",
+                    "right": "1168.33px",
                     "row-gap": "normal",
                     "rx": "auto",
                     "ry": "auto",
@@ -15195,7 +15345,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 1,
+                "offsetLeft": 0,
+                "offsetTop": 72,
                 "offsetWidth": 1,
+                "pre": null,
                 "scrollHeight": 1,
                 "scrollWidth": 1,
                 "tag": "DIV"
@@ -15425,7 +15578,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "601.333px 159px",
+                    "perspective-origin": "568.667px 159px",
                     "pointer-events": "auto",
                     "position": "absolute",
                     "r": "0px",
@@ -15470,7 +15623,7 @@
                     "top": "0px",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "601.333px 159px",
+                    "transform-origin": "568.667px 159px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -15483,7 +15636,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "1202.67px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -15494,9 +15647,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 318,
-                "offsetWidth": 1203,
+                "offsetLeft": 0,
+                "offsetTop": 0,
+                "offsetWidth": 1137,
+                "pre": null,
                 "scrollHeight": 318,
-                "scrollWidth": 1203,
+                "scrollWidth": 1137,
                 "tag": "DIV"
             },
             "type": "empty"
@@ -15792,7 +15948,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 48,
+                "offsetLeft": 63,
+                "offsetTop": 40,
                 "offsetWidth": 1012,
+                "pre": null,
                 "scrollHeight": 48,
                 "scrollWidth": 1012,
                 "tag": "DIV"
@@ -16087,7 +16246,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 69,
+                "offsetLeft": 24,
+                "offsetTop": 32,
                 "offsetWidth": 88,
+                "pre": null,
                 "scrollHeight": 69,
                 "scrollWidth": 88,
                 "tag": "DIV"
@@ -16386,7 +16548,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 18,
+                "offsetLeft": 530,
+                "offsetTop": 376,
                 "offsetWidth": 482,
+                "pre": null,
                 "scrollHeight": 18,
                 "scrollWidth": 482,
                 "tag": "DIV"
@@ -16684,7 +16849,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 0,
+                "offsetLeft": 0,
+                "offsetTop": 0,
                 "offsetWidth": 0,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "DIV"
@@ -16794,7 +16962,7 @@
                     "border-top-right-radius": "0px",
                     "border-top-style": "none",
                     "border-top-width": "0px",
-                    "bottom": "-6257.56px",
+                    "bottom": "-6602.15px",
                     "box-shadow": "none",
                     "box-sizing": "border-box",
                     "break-after": "auto",
@@ -16916,7 +17084,7 @@
                     "position": "absolute",
                     "r": "0px",
                     "resize": "none",
-                    "right": "1233.67px",
+                    "right": "1168.33px",
                     "row-gap": "normal",
                     "rx": "auto",
                     "ry": "auto",
@@ -16953,7 +17121,7 @@
                     "text-size-adjust": "100%",
                     "text-transform": "none",
                     "text-underline-position": "auto",
-                    "top": "7506.56px",
+                    "top": "7471.15px",
                     "touch-action": "auto",
                     "transform": "none",
                     "transform-origin": "0.5px 0.5px",
@@ -16980,7 +17148,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 1,
+                "offsetLeft": 0,
+                "offsetTop": 7471,
                 "offsetWidth": 1,
+                "pre": null,
                 "scrollHeight": 1,
                 "scrollWidth": 1,
                 "tag": "DIV"
@@ -17281,7 +17452,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 128,
+                "offsetLeft": 16,
+                "offsetTop": 91,
                 "offsetWidth": 505,
+                "pre": null,
                 "scrollHeight": 134,
                 "scrollWidth": 505,
                 "tag": "H1"
@@ -17511,7 +17685,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "118.333px 10px",
+                    "perspective-origin": "110.167px 10px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -17556,7 +17730,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "118.333px 10px",
+                    "transform-origin": "110.167px 10px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -17569,7 +17743,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "236.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -17580,9 +17754,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 20,
-                "offsetWidth": 237,
+                "offsetLeft": 16,
+                "offsetTop": 232,
+                "offsetWidth": 221,
+                "pre": null,
                 "scrollHeight": 20,
-                "scrollWidth": 237,
+                "scrollWidth": 221,
                 "tag": "H1"
             },
             "type": "text"
@@ -17879,7 +18056,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 21,
+                "offsetLeft": 593,
+                "offsetTop": 24,
                 "offsetWidth": 379,
+                "pre": null,
                 "scrollHeight": 21,
                 "scrollWidth": 379,
                 "tag": "LABEL"
@@ -18108,7 +18288,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "134.333px 10.3333px",
+                    "perspective-origin": "126.167px 10.3333px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -18153,7 +18333,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "134.333px 10.3333px",
+                    "transform-origin": "126.167px 10.3333px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -18166,7 +18346,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "268.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -18177,9 +18357,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 21,
-                "offsetWidth": 269,
+                "offsetLeft": 32,
+                "offsetTop": 6770,
+                "offsetWidth": 253,
+                "pre": null,
                 "scrollHeight": 21,
-                "scrollWidth": 269,
+                "scrollWidth": 253,
                 "tag": "LABEL"
             },
             "type": "text"
@@ -18479,7 +18662,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 66,
+                "offsetLeft": 593,
+                "offsetTop": 328,
                 "offsetWidth": 379,
+                "pre": null,
                 "scrollHeight": 64,
                 "scrollWidth": 377,
                 "tag": "BUTTON"
@@ -18709,7 +18895,7 @@
                     "padding-top": "16px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "134.333px 27.3333px",
+                    "perspective-origin": "126.167px 27.3333px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -18754,7 +18940,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "134.333px 27.3333px",
+                    "transform-origin": "126.167px 27.3333px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0.2s",
@@ -18767,7 +18953,7 @@
                     "visibility": "visible",
                     "white-space": "nowrap",
                     "widows": "2",
-                    "width": "268.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -18778,9 +18964,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 55,
-                "offsetWidth": 269,
+                "offsetLeft": 885,
+                "offsetTop": 6790,
+                "offsetWidth": 252,
+                "pre": null,
                 "scrollHeight": 53,
-                "scrollWidth": 267,
+                "scrollWidth": 250,
                 "tag": "BUTTON"
             },
             "type": "text"
@@ -19076,7 +19265,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 48,
+                "offsetLeft": 217,
+                "offsetTop": 710,
                 "offsetWidth": 737,
+                "pre": null,
                 "scrollHeight": 48,
                 "scrollWidth": 737,
                 "tag": "H2"
@@ -19084,7 +19276,7 @@
             "type": "text"
         },
         "h1-mktg,lh-condensed": {
-            "content": "Join this orbit",
+            "content": "Watch GitHub Satellite live",
             "info": {
                 "bomtype": null,
                 "class": [
@@ -19373,7 +19565,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 40,
+                "offsetLeft": 63,
+                "offsetTop": 120,
                 "offsetWidth": 1012,
+                "pre": null,
                 "scrollHeight": 40,
                 "scrollWidth": 1012,
                 "tag": "H2"
@@ -19673,7 +19868,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 95,
+                "offsetTop": 1667,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 980,
                 "tag": "H2"
@@ -19972,7 +20170,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 258,
+                "offsetTop": 4295,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 653,
                 "tag": "H2"
@@ -20269,7 +20470,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 144,
+                "offsetLeft": 95,
+                "offsetTop": 6546,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 144,
                 "scrollWidth": 980,
                 "tag": "H2"
@@ -20500,7 +20704,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "88.2188px 10.3333px",
+                    "perspective-origin": "82.7708px 10.3333px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -20545,7 +20749,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "88.2188px 10.3333px",
+                    "transform-origin": "82.776px 10.3333px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -20558,7 +20762,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "176.438px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -20569,9 +20773,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 21,
-                "offsetWidth": 177,
+                "offsetLeft": 419,
+                "offsetTop": 7095,
+                "offsetWidth": 165,
+                "pre": null,
                 "scrollHeight": 21,
-                "scrollWidth": 177,
+                "scrollWidth": 165,
                 "tag": "H2"
             },
             "type": "text"
@@ -20868,7 +21075,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 217,
+                "offsetTop": 758,
                 "offsetWidth": 737,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 737,
                 "tag": "P"
@@ -20876,7 +21086,7 @@
             "type": "text"
         },
         "mt-2,mb-5": {
-            "content": "Meet us in Berlin May 22-23 at GitHub Satellite, a global conference for people changing the world through software.",
+            "content": "Tune in to the stream, live from Berlin, on May 23 to hear the latest from GitHub and leading developers.",
             "info": {
                 "bomtype": null,
                 "class": [
@@ -21165,7 +21375,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 63,
+                "offsetTop": 168,
                 "offsetWidth": 1012,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 1012,
                 "tag": "P"
@@ -21465,7 +21678,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 60,
+                "offsetLeft": 95,
+                "offsetTop": 1707,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 60,
                 "scrollWidth": 980,
                 "tag": "P"
@@ -21766,7 +21982,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 60,
+                "offsetLeft": 258,
+                "offsetTop": 1775,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 60,
                 "scrollWidth": 653,
                 "tag": "P"
@@ -22065,7 +22284,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 72,
+                "offsetLeft": 95,
+                "offsetTop": 3242,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 72,
                 "scrollWidth": 980,
                 "tag": "P"
@@ -22363,7 +22585,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 62,
+                "offsetLeft": 135,
+                "offsetTop": 3586,
                 "offsetWidth": 410,
+                "pre": null,
                 "scrollHeight": 62,
                 "scrollWidth": 410,
                 "tag": "P"
@@ -22661,7 +22886,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 83,
+                "offsetLeft": 112,
+                "offsetTop": 56,
                 "offsetWidth": 425,
+                "pre": null,
                 "scrollHeight": 83,
                 "scrollWidth": 425,
                 "tag": "P"
@@ -22960,7 +23188,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 60,
+                "offsetLeft": 258,
+                "offsetTop": 4335,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 60,
                 "scrollWidth": 653,
                 "tag": "P"
@@ -23259,7 +23490,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 90,
+                "offsetLeft": 258,
+                "offsetTop": 4403,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 90,
                 "scrollWidth": 653,
                 "tag": "P"
@@ -23560,7 +23794,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 41,
+                "offsetLeft": 421,
+                "offsetTop": 4887,
                 "offsetWidth": 327,
+                "pre": null,
                 "scrollHeight": 41,
                 "scrollWidth": 327,
                 "tag": "P"
@@ -23860,7 +24097,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 120,
+                "offsetLeft": 95,
+                "offsetTop": 5210,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 120,
                 "scrollWidth": 980,
                 "tag": "P"
@@ -24160,7 +24400,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 60,
+                "offsetLeft": 258,
+                "offsetTop": 5354,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 60,
                 "scrollWidth": 653,
                 "tag": "P"
@@ -24388,7 +24631,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "118.333px 36px",
+                    "perspective-origin": "110.167px 36px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -24433,7 +24676,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "118.333px 36px",
+                    "transform-origin": "110.167px 36px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -24446,7 +24689,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "236.667px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -24457,9 +24700,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 72,
-                "offsetWidth": 237,
+                "offsetLeft": 16,
+                "offsetTop": 256,
+                "offsetWidth": 221,
+                "pre": null,
                 "scrollHeight": 72,
-                "scrollWidth": 237,
+                "scrollWidth": 221,
                 "tag": "P"
             },
             "type": "text"
@@ -24758,7 +25004,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 100,
+                "offsetLeft": 258,
+                "offsetTop": 5882,
                 "offsetWidth": 653,
+                "pre": null,
                 "scrollHeight": 100,
                 "scrollWidth": 653,
                 "tag": "P"
@@ -25060,7 +25309,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 25,
+                "offsetLeft": 95,
+                "offsetTop": 1345,
                 "offsetWidth": 980,
+                "pre": null,
                 "scrollHeight": 25,
                 "scrollWidth": 980,
                 "tag": "H3"
@@ -25289,7 +25541,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "174.063px 15px",
+                    "perspective-origin": "162.729px 15px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -25334,7 +25586,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "174.068px 15px",
+                    "transform-origin": "162.729px 15px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -25347,7 +25599,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "348.135px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -25358,9 +25610,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 30,
-                "offsetWidth": 348,
+                "offsetLeft": 722,
+                "offsetTop": 65,
+                "offsetWidth": 325,
+                "pre": null,
                 "scrollHeight": 30,
-                "scrollWidth": 348,
+                "scrollWidth": 325,
                 "tag": "H3"
             },
             "type": "text"
@@ -25555,8 +25810,8 @@
                     "list-style-position": "outside",
                     "list-style-type": "disc",
                     "margin-bottom": "0px",
-                    "margin-left": "205.781px",
-                    "margin-right": "205.781px",
+                    "margin-left": "194.885px",
+                    "margin-right": "194.896px",
                     "margin-top": "40px",
                     "marker-end": "none",
                     "marker-mid": "none",
@@ -25590,7 +25845,7 @@
                     "padding-top": "0px",
                     "paint-order": "normal",
                     "perspective": "none",
-                    "perspective-origin": "411.552px 15px",
+                    "perspective-origin": "389.771px 15px",
                     "pointer-events": "auto",
                     "position": "static",
                     "r": "0px",
@@ -25635,7 +25890,7 @@
                     "top": "auto",
                     "touch-action": "auto",
                     "transform": "none",
-                    "transform-origin": "411.552px 15px",
+                    "transform-origin": "389.776px 15px",
                     "transform-style": "flat",
                     "transition-delay": "0s",
                     "transition-duration": "0s",
@@ -25648,7 +25903,7 @@
                     "visibility": "visible",
                     "white-space": "normal",
                     "widows": "2",
-                    "width": "823.104px",
+                    "width": "auto",
                     "will-change": "auto",
                     "word-break": "normal",
                     "word-spacing": "0px",
@@ -25659,9 +25914,12 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 30,
-                "offsetWidth": 823,
+                "offsetLeft": 195,
+                "offsetTop": 2635,
+                "offsetWidth": 780,
+                "pre": null,
                 "scrollHeight": 30,
-                "scrollWidth": 823,
+                "scrollWidth": 780,
                 "tag": "H3"
             },
             "type": "text"
@@ -25958,7 +26216,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 30,
+                "offsetLeft": 135,
+                "offsetTop": 3688,
                 "offsetWidth": 410,
+                "pre": null,
                 "scrollHeight": 30,
                 "scrollWidth": 410,
                 "tag": "H3"
@@ -26254,7 +26515,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 112,
+                "offsetTop": 32,
                 "offsetWidth": 433,
+                "pre": null,
                 "scrollHeight": 24,
                 "scrollWidth": 433,
                 "tag": "H3"
@@ -26552,7 +26816,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 29,
+                "offsetLeft": 159,
+                "offsetTop": 81,
                 "offsetWidth": 12,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SUP"
@@ -26848,7 +27115,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 24,
+                "offsetLeft": 99,
+                "offsetTop": 26,
                 "offsetWidth": 10,
+                "pre": null,
                 "scrollHeight": 0,
                 "scrollWidth": 0,
                 "tag": "SUP"
@@ -27145,7 +27415,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 18,
+                "offsetLeft": 988,
+                "offsetTop": 7428,
                 "offsetWidth": 22,
+                "pre": null,
                 "scrollHeight": 18,
                 "scrollWidth": 22,
                 "tag": "LI"
@@ -27441,7 +27714,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 18,
+                "offsetLeft": 1099,
+                "offsetTop": 7427,
                 "offsetWidth": 19,
+                "pre": null,
                 "scrollHeight": 18,
                 "scrollWidth": 19,
                 "tag": "LI"
@@ -27736,7 +28012,10 @@
                     "zoom": "1"
                 },
                 "offsetHeight": 20,
+                "offsetLeft": 1133,
+                "offsetTop": 7427,
                 "offsetWidth": 20,
+                "pre": null,
                 "scrollHeight": 20,
                 "scrollWidth": 20,
                 "tag": "LI"

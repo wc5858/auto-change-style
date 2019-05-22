@@ -2,18 +2,19 @@ const { Builder } = require('selenium-webdriver');
 const { rebuildHTML } = require('../util/domTree');
 const getBundle = require('../util/getBundle');
 const { readJson } = require('../util/localFs');
+const saveImg = require('../util/saveImage');
 
 const list = [
-    {
-        site: 'github',
-        protocol: 'https',
-        root: 'github.com'
-    }
     // {
-    //     site: 'element',
+    //     site: 'github',
     //     protocol: 'https',
-    //     root: 'element.eleme.cn/#/zh-CN/component/installation'
+    //     root: 'github.com'
     // }
+    {
+        site: 'element',
+        protocol: 'https',
+        root: 'element.eleme.cn/#/zh-CN/component/installation'
+    }
 ]
 
 
@@ -29,7 +30,7 @@ function dealTree(node, parent, lifeCircle) {
         return
     }
     if (!node.children) {
-        if (lifeCircle == AFTER_LIFE_CIRCLE){
+        if (lifeCircle == AFTER_LIFE_CIRCLE) {
             count++
         }
         if (parent) {
@@ -46,7 +47,12 @@ function dealTree(node, parent, lifeCircle) {
             } else {
                 node.info[lifeCircle] = 0
             }
-            console.log(node.info[PRE_LIFE_CIRCLE],node.info[AFTER_LIFE_CIRCLE])
+            if (node.content == "Watch live") {
+                console.log({
+                    x, y, w, h, X, Y, W, H
+                })
+            }
+            // console.log(node.info[PRE_LIFE_CIRCLE],node.info[AFTER_LIFE_CIRCLE])
             if (lifeCircle == AFTER_LIFE_CIRCLE && node.info[PRE_LIFE_CIRCLE] != node.info[AFTER_LIFE_CIRCLE]) {
                 countParentDiff++
             }
@@ -58,12 +64,33 @@ function dealTree(node, parent, lifeCircle) {
     }
 }
 
+function compareWidth(n1, n2) {
+    if (!n1 || (typeof n1 == 'string')) {
+        return
+    }
+    if (!n1.children) {
+        if (n1.info.css.width != n2.info.css.width) {
+            n1.info.css.width = 'auto'
+        }
+    } else {
+        for (let i = 0; i < n1.children.length; i++) {
+            compareWidth(n1.children[i], n2.children[i])
+        }
+    }
+}
+
 module.exports = async function () {
     try {
         let source = await readJson('bootstrap-leaf')
         for (let site of list) {
             let driver = await new Builder().forBrowser('chrome').build();
+            await driver.manage().window().setRect({
+                height: 1000,
+                width: 1200
+            })
             await driver.get(site.protocol + '://' + site.root)
+            imgData = await driver.takeScreenshot()
+            saveImg(site.site + '-change-before' + (+new Date()), imgData)
             const bundle = getBundle('./src/util/domTree.js', 'domTree')
 
             let node = await driver.executeScript(function () {
@@ -81,6 +108,27 @@ module.exports = async function () {
                     bundle
                 }
             )
+
+            await driver.manage().window().setRect({
+                height: 1000,
+                width: 1210
+            })
+            let node2 = await driver.executeScript(function () {
+                var data = arguments[0]
+                try {
+                    eval(data.bundle)
+                } catch (e) {
+                    console.log(e)
+                }
+                var domTree = require('domTree')
+                let node = domTree.createTree(document.body)
+                console.log(node)
+                return node
+            }, {
+                    bundle
+                }
+            )
+            compareWidth(node, node2)
 
             let countLeaf = 0
             let replaced = 0
@@ -104,14 +152,30 @@ module.exports = async function () {
                         // }
                         let tmp = null
                         let min = Infinity
-                        for (const key in source[tag]) {
-                            if (source[tag].hasOwnProperty(key)) {
-                                const element = source[tag][key]
-                                let widthDiff = Math.abs(element.info.offsetWidth - node.info.offsetWidth) / node.info.offsetWidth
-                                let heightDiff = Math.abs(element.info.offsetHeight - node.info.offsetHeight) / node.info.offsetHeight
-                                if (widthDiff + heightDiff < min) {
-                                    min = widthDiff + heightDiff
-                                    tmp = element
+                        // console.log(node.info.css.display)
+                        if (node.info.css.width != 'auto') {
+                            for (const key in source[tag]) {
+                                if (source[tag].hasOwnProperty(key)) {
+                                    const element = source[tag][key]
+                                    let widthDiff = Math.abs(element.info.offsetWidth - node.info.offsetWidth) / node.info.offsetWidth
+                                    let heightDiff = Math.abs(element.info.offsetHeight - node.info.offsetHeight) / node.info.offsetHeight
+                                    if (widthDiff + heightDiff < min) {
+                                        min = widthDiff + heightDiff
+                                        tmp = element
+                                    }
+                                }
+                            }
+                        } else {
+                            for (const key in source[tag]) {
+                                if (source[tag].hasOwnProperty(key)) {
+                                    const element = source[tag][key]
+                                    if (element.info.width == 'auto') {
+                                        let heightDiff = Math.abs(element.info.offsetHeight - node.info.offsetHeight) / node.info.offsetHeight
+                                        if (heightDiff < min) {
+                                            min = heightDiff
+                                            tmp = element
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -151,7 +215,9 @@ module.exports = async function () {
                     bundle
                 }
             )
-            dealTree(node, null, AFTER_LIFE_CIRCLE)
+            imgData = await driver.takeScreenshot()
+            saveImg(site.site + '-change-after' + (+new Date()), imgData)
+            dealTree(newNode, null, AFTER_LIFE_CIRCLE)
             console.log(`${countParentDiff} of ${count} 改变了节点关系`)
         }
 
