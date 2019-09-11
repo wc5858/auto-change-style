@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Booking.com",
+        "loadTime": 6654
+    },
+    {
+        "rank": 2,
+        "url": "Tripadvisor.com",
+        "loadTime": 6866
+    },
+    {
+        "rank": 3,
+        "url": "9gag.com",
+        "loadTime": 24901
+    },
+    {
+        "rank": 4,
+        "url": "Expedia.com",
+        "loadTime": 27466
+    },
+    {
+        "rank": 5,
+        "url": "Hotels.com",
+        "loadTime": 32426
+    },
+    {
+        "rank": 6,
+        "url": "Agoda.com",
+        "loadTime": 31425
+    },
+    {
+        "rank": 7,
+        "url": "Marriott.com",
+        "loadTime": 30914
+    },
+    {
+        "rank": 8,
+        "url": "Delta.com",
+        "loadTime": 1534
+    },
+    {
+        "rank": 9,
+        "url": "Kayak.com",
+        "loadTime": 31928
+    },
+    {
+        "rank": 10,
+        "url": "Xe.com",
+        "loadTime": 28879
+    },
+    {
+        "rank": 11,
+        "url": "Southwest.com",
+        "loadTime": 39574
+    },
+    {
+        "rank": 12,
+        "url": "Aa.com",
+        "loadTime": 12033
+    },
+    {
+        "rank": 13,
+        "url": "Zomato.com",
+        "loadTime": 31872
+    },
+    {
+        "rank": 14,
+        "url": "United.com",
+        "loadTime": 8788
+    },
+    {
+        "rank": 15,
+        "url": "Uber.com",
+        "loadTime": 31976
+    },
+    {
+        "rank": 16,
+        "url": "Ryanair.com",
+        "loadTime": 30899
+    },
+    {
+        "rank": 17,
+        "url": "Hilton.com",
+        "loadTime": 46042
+    },
+    {
+        "rank": 18,
+        "url": "Flightradar24.com",
+        "loadTime": 13050
+    },
+    {
+        "rank": 19,
+        "url": "Priceline.com",
+        "loadTime": 31454
+    },
+    {
+        "rank": 20,
+        "url": "Vrbo.com",
+        "loadTime": 28120
+    },
+    {
+        "rank": 21,
+        "url": "Emirates.com",
+        "loadTime": 23101
+    },
+    {
+        "rank": 22,
+        "url": "Ana.co.jp",
+        "loadTime": 4499
+    },
+    {
+        "rank": 23,
+        "url": "Qatarairways.com",
+        "loadTime": 4185
+    },
+    {
+        "rank": 24,
+        "url": "Skyscanner.com",
+        "loadTime": 12428
+    },
+    {
+        "rank": 25,
+        "url": "Jal.co.jp",
+        "loadTime": 52589
+    },
+    {
+        "rank": 26,
+        "url": "Orbitz.com",
+        "loadTime": 27769
+    },
+    {
+        "rank": 27,
+        "url": "Easyjet.com",
+        "loadTime": 2468
+    },
+    {
+        "rank": 28,
+        "url": "Turkishairlines.com",
+        "loadTime": 6788
+    },
+    {
+        "rank": 29,
+        "url": "Grubhub.com",
+        "loadTime": 4680
+    },
+    {
+        "rank": 30,
+        "url": "Travelocity.com",
+        "loadTime": 90783
+    },
+    {
+        "rank": 31,
+        "url": "Travel.state.gov",
+        "loadTime": 29533
+    },
+    {
+        "rank": 32,
+        "url": "Hotwire.com",
+        "loadTime": 72794
+    },
+    {
+        "rank": 33,
+        "url": "Timeout.com",
+        "loadTime": 84004
+    },
+    {
+        "rank": 34,
+        "url": "Lonelyplanet.com",
+        "loadTime": 45396
+    },
+    {
+        "rank": 35,
+        "url": "Aeroflot.ru",
+        "loadTime": 24887
+    },
+    {
+        "rank": 36,
+        "url": "Accorhotels.com",
+        "loadTime": 9985
+    },
+    {
+        "rank": 37,
+        "url": "Opentable.com",
+        "loadTime": 37631
+    },
+    {
+        "rank": 38,
+        "url": "Tripsavvy.com",
+        "loadTime": 4097
+    },
+    {
+        "rank": 39,
+        "url": "Couchsurfing.com",
+        "loadTime": 15118
+    },
+    {
+        "rank": 40,
+        "url": "Jalopnik.com",
+        "loadTime": 44645
+    },
+    {
+        "rank": 41,
+        "url": "Ford.com",
+        "loadTime": 30873
+    },
+    {
+        "rank": 42,
+        "url": "Lufthansa.com",
+        "loadTime": 16512
+    },
+    {
+        "rank": 43,
+        "url": "Cracked.com",
+        "loadTime": 45355
+    },
+    {
+        "rank": 44,
+        "url": "Disneyworld.disney.go.com",
+        "loadTime": 58563
+    },
+    {
+        "rank": 45,
+        "url": "Britishairways.com",
+        "loadTime": 29182
+    },
+    {
+        "rank": 46,
+        "url": "Hyatt.com",
+        "loadTime": 5149
+    },
+    {
+        "rank": 47,
+        "url": "Aircanada.com",
+        "loadTime": 28095
+    },
+    {
+        "rank": 48,
+        "url": "Trivago.com",
+        "loadTime": 14661
+    },
+    {
+        "rank": 49,
+        "url": "Spirit.com",
+        "loadTime": 2209
+    },
+    {
+        "rank": 50,
+        "url": "Lego.com",
+        "loadTime": 5957
+    }
+]

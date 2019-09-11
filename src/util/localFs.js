@@ -18,9 +18,12 @@ async function mkdir(path) {
 }
 
 // 保存json数据
-async function saveData(name, data) {
+async function saveData(name, data, dir) {
+    if (dir) {
+        mkdir(dir)
+    }
     let json = JSON.stringify(data, null, 4)
-    return await writeFile(dataPath + name + '.json', json, 'utf8')
+    return await writeFile((dir || dataPath) + name + '.json', json, 'utf8')
 }
 
 async function readJson(file) {

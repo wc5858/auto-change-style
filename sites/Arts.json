@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Youtube.com",
+        "loadTime": 24935
+    },
+    {
+        "rank": 2,
+        "url": "Netflix.com",
+        "loadTime": 23508
+    },
+    {
+        "rank": 3,
+        "url": "Imdb.com",
+        "loadTime": 88931
+    },
+    {
+        "rank": 4,
+        "url": "Spotify.com",
+        "loadTime": 99907
+    },
+    {
+        "rank": 5,
+        "url": "Espn.com",
+        "loadTime": 75976
+    },
+    {
+        "rank": 6,
+        "url": "Cnn.com",
+        "loadTime": 125974
+    },
+    {
+        "rank": 7,
+        "url": "Bbc.co.uk",
+        "loadTime": 36448
+    },
+    {
+        "rank": 8,
+        "url": "Scribd.com",
+        "loadTime": 18762
+    },
+    {
+        "rank": 9,
+        "url": "Foxnews.com",
+        "loadTime": 93437
+    },
+    {
+        "rank": 10,
+        "url": "Hulu.com",
+        "loadTime": 210685
+    },
+    {
+        "rank": 11,
+        "url": "Grammarly.com",
+        "loadTime": 59166
+    },
+    {
+        "rank": 12,
+        "url": "Deviantart.com",
+        "loadTime": 32981
+    },
+    {
+        "rank": 13,
+        "url": "Ndtv.com",
+        "loadTime": 39318
+    },
+    {
+        "rank": 14,
+        "url": "Xfinity.com",
+        "loadTime": 85767
+    },
+    {
+        "rank": 15,
+        "url": "Livejournal.com",
+        "loadTime": 90264
+    },
+    {
+        "rank": 16,
+        "url": "Cnbc.com",
+        "loadTime": 142988
+    },
+    {
+        "rank": 17,
+        "url": "Ign.com",
+        "loadTime": 71151
+    },
+    {
+        "rank": 18,
+        "url": "Ultimate-guitar.com",
+        "loadTime": 79096
+    },
+    {
+        "rank": 19,
+        "url": "Pandora.com",
+        "loadTime": 14917
+    },
+    {
+        "rank": 20,
+        "url": "Rottentomatoes.com",
+        "loadTime": 102702
+    },
+    {
+        "rank": 21,
+        "url": "Urbandictionary.com",
+        "loadTime": 64304
+    },
+    {
+        "rank": 22,
+        "url": "Discogs.com",
+        "loadTime": 106860
+    },
+    {
+        "rank": 23,
+        "url": "Nbcnews.com",
+        "loadTime": 34101
+    },
+    {
+        "rank": 24,
+        "url": "Npr.org",
+        "loadTime": 49151
+    },
+    {
+        "rank": 25,
+        "url": "Cbsnews.com",
+        "loadTime": 31912
+    },
+    {
+        "rank": 26,
+        "url": "Vice.com",
+        "loadTime": 89474
+    },
+    {
+        "rank": 27,
+        "url": "Cbc.ca",
+        "loadTime": 29854
+    },
+    {
+        "rank": 28,
+        "url": "Archiveofourown.org",
+        "loadTime": 31800
+    },
+    {
+        "rank": 29,
+        "url": "Tmz.com",
+        "loadTime": 28282
+    },
+    {
+        "rank": 30,
+        "url": "Abcnews.go.com",
+        "loadTime": 74525
+    },
+    {
+        "rank": 31,
+        "url": "Fanfiction.net",
+        "loadTime": 43341
+    },
+    {
+        "rank": 32,
+        "url": "Ieee.org",
+        "loadTime": 32964
+    },
+    {
+        "rank": 33,
+        "url": "Abc.net.au",
+        "loadTime": 30231
+    },
+    {
+        "rank": 34,
+        "url": "Wired.com",
+        "loadTime": 164901
+    },
+    {
+        "rank": 35,
+        "url": "Deezer.com",
+        "loadTime": 50311
+    },
+    {
+        "rank": 36,
+        "url": "Last.fm",
+        "loadTime": 148218
+    },
+    {
+        "rank": 37,
+        "url": "Foodnetwork.com",
+        "loadTime": 105980
+    },
+    {
+        "rank": 38,
+        "url": "Theatlantic.com",
+        "loadTime": 25139
+    },
+    {
+        "rank": 39,
+        "url": "Fandango.com",
+        "loadTime": 6637
+    },
+    {
+        "rank": 40,
+        "url": "Eonline.com",
+        "loadTime": 52400
+    },
+    {
+        "rank": 41,
+        "url": "Vectorstock.com",
+        "loadTime": 102699
+    },
+    {
+        "rank": 42,
+        "url": "Cbs.com",
+        "loadTime": 57744
+    },
+    {
+        "rank": 43,
+        "url": "Directv.com",
+        "loadTime": 70563
+    },
+    {
+        "rank": 44,
+        "url": "Variety.com",
+        "loadTime": 128011
+    },
+    {
+        "rank": 45,
+        "url": "Billboard.com",
+        "loadTime": 42587
+    },
+    {
+        "rank": 46,
+        "url": "Filmaffinity.com",
+        "loadTime": 14002
+    },
+    {
+        "rank": 47,
+        "url": "Rollingstone.com",
+        "loadTime": 64373
+    },
+    {
+        "rank": 48,
+        "url": "Pbs.org",
+        "loadTime": 27391
+    },
+    {
+        "rank": 49,
+        "url": "Hollywoodreporter.com",
+        "loadTime": 48581
+    },
+    {
+        "rank": 50,
+        "url": "Sky.com",
+        "loadTime": 21181
+    }
+]

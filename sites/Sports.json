@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Espn.com",
+        "loadTime": 62745
+    },
+    {
+        "rank": 2,
+        "url": "Cricbuzz.com",
+        "loadTime": 14012
+    },
+    {
+        "rank": 3,
+        "url": "Espncricinfo.com",
+        "loadTime": 82998
+    },
+    {
+        "rank": 4,
+        "url": "Sports.yahoo.com",
+        "loadTime": 69431
+    },
+    {
+        "rank": 5,
+        "url": "Premierleague.com",
+        "loadTime": 39130
+    },
+    {
+        "rank": 6,
+        "url": "Livescore.com",
+        "loadTime": 46527
+    },
+    {
+        "rank": 7,
+        "url": "Bleacherreport.com",
+        "loadTime": 100382
+    },
+    {
+        "rank": 8,
+        "url": "Cbssports.com",
+        "loadTime": 263042
+    },
+    {
+        "rank": 9,
+        "url": "Nfl.com",
+        "loadTime": 84272
+    },
+    {
+        "rank": 10,
+        "url": "Flashscore.com",
+        "loadTime": 26441
+    },
+    {
+        "rank": 11,
+        "url": "Goal.com",
+        "loadTime": 84480
+    },
+    {
+        "rank": 12,
+        "url": "Strava.com",
+        "loadTime": 60369
+    },
+    {
+        "rank": 13,
+        "url": "Skysports.com",
+        "loadTime": 114770
+    },
+    {
+        "rank": 14,
+        "url": "Football.fantasysports.yahoo.com",
+        "loadTime": 80943
+    },
+    {
+        "rank": 15,
+        "url": "Nbcsports.com",
+        "loadTime": 145168
+    },
+    {
+        "rank": 16,
+        "url": "Nba.com",
+        "loadTime": 67066
+    },
+    {
+        "rank": 17,
+        "url": "Rei.com",
+        "loadTime": 113237
+    },
+    {
+        "rank": 18,
+        "url": "Filgoal.com",
+        "loadTime": 206041
+    },
+    {
+        "rank": 19,
+        "url": "Baseball.fantasysports.yahoo.com",
+        "loadTime": 51012
+    },
+    {
+        "rank": 20,
+        "url": "Deadspin.com",
+        "loadTime": 105327
+    },
+    {
+        "rank": 21,
+        "url": "Nhl.com",
+        "loadTime": 144674
+    },
+    {
+        "rank": 22,
+        "url": "Sbnation.com",
+        "loadTime": 75048
+    },
+    {
+        "rank": 23,
+        "url": "Baseball-reference.com",
+        "loadTime": 42331
+    },
+    {
+        "rank": 24,
+        "url": "Motorsport.com",
+        "loadTime": 113555
+    },
+    {
+        "rank": 25,
+        "url": "Rivals.com",
+        "loadTime": 60676
+    },
+    {
+        "rank": 26,
+        "url": "Si.com",
+        "loadTime": 171487
+    },
+    {
+        "rank": 27,
+        "url": "Wwe.com",
+        "loadTime": 58777
+    },
+    {
+        "rank": 28,
+        "url": "Soccerway.com",
+        "loadTime": 69307
+    },
+    {
+        "rank": 29,
+        "url": "Formula1.com",
+        "loadTime": 77351
+    },
+    {
+        "rank": 30,
+        "url": "Foxsports.com",
+        "loadTime": 87471
+    },
+    {
+        "rank": 31,
+        "url": "Uefa.com",
+        "loadTime": 102079
+    },
+    {
+        "rank": 32,
+        "url": "Rotoworld.com",
+        "loadTime": 87191
+    },
+    {
+        "rank": 33,
+        "url": "Football365.com",
+        "loadTime": 84242
+    },
+    {
+        "rank": 34,
+        "url": "Milb.com",
+        "loadTime": 67486
+    },
+    {
+        "rank": 35,
+        "url": "Hkjc.com",
+        "loadTime": 27538
+    },
+    {
+        "rank": 36,
+        "url": "Pgatour.com",
+        "loadTime": 32297
+    },
+    {
+        "rank": 37,
+        "url": "Active.com",
+        "loadTime": 36603
+    },
+    {
+        "rank": 38,
+        "url": "Fifa.com",
+        "loadTime": 13253
+    },
+    {
+        "rank": 39,
+        "url": "Basketball-reference.com",
+        "loadTime": 6477
+    },
+    {
+        "rank": 40,
+        "url": "Sherdog.com",
+        "loadTime": 45553
+    },
+    {
+        "rank": 41,
+        "url": "Manutd.com",
+        "loadTime": 31327
+    },
+    {
+        "rank": 42,
+        "url": "Afl.com.au",
+        "loadTime": 21419
+    },
+    {
+        "rank": 43,
+        "url": "Pinkbike.com",
+        "loadTime": 13876
+    },
+    {
+        "rank": 44,
+        "url": "Pro-football-reference.com",
+        "loadTime": 5562
+    },
+    {
+        "rank": 45,
+        "url": "Arsenal.com",
+        "loadTime": 22147
+    },
+    {
+        "rank": 46,
+        "url": "Maxpreps.com",
+        "loadTime": 43766
+    },
+    {
+        "rank": 47,
+        "url": "Eurosport.com",
+        "loadTime": 48346
+    },
+    {
+        "rank": 48,
+        "url": "Whoscored.com",
+        "loadTime": 13764
+    },
+    {
+        "rank": 49,
+        "url": "Mlb.mlb.com",
+        "loadTime": 31967
+    },
+    {
+        "rank": 50,
+        "url": "Liverpoolfc.com",
+        "loadTime": 30375
+    }
+]

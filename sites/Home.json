@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Yelp.com",
+        "loadTime": 6243
+    },
+    {
+        "rank": 2,
+        "url": "Finance.yahoo.com",
+        "loadTime": 45558
+    },
+    {
+        "rank": 3,
+        "url": "Cnbc.com",
+        "loadTime": 78561
+    },
+    {
+        "rank": 4,
+        "url": "Marketwatch.com",
+        "loadTime": 32226
+    },
+    {
+        "rank": 5,
+        "url": "Gsmarena.com",
+        "loadTime": 80626
+    },
+    {
+        "rank": 6,
+        "url": "Theverge.com",
+        "loadTime": 30605
+    },
+    {
+        "rank": 7,
+        "url": "Gizmodo.com",
+        "loadTime": 36184
+    },
+    {
+        "rank": 8,
+        "url": "Engadget.com",
+        "loadTime": 32555
+    },
+    {
+        "rank": 9,
+        "url": "Irs.gov",
+        "loadTime": 27008
+    },
+    {
+        "rank": 10,
+        "url": "Trustpilot.com",
+        "loadTime": 8800
+    },
+    {
+        "rank": 11,
+        "url": "Digitaltrends.com",
+        "loadTime": 11633
+    },
+    {
+        "rank": 12,
+        "url": "Allrecipes.com",
+        "loadTime": 53774
+    },
+    {
+        "rank": 13,
+        "url": "Tomshardware.com",
+        "loadTime": 90414
+    },
+    {
+        "rank": 14,
+        "url": "Instructables.com",
+        "loadTime": 12551
+    },
+    {
+        "rank": 15,
+        "url": "Tomsguide.com",
+        "loadTime": 57555
+    },
+    {
+        "rank": 16,
+        "url": "Kbb.com",
+        "loadTime": 29679
+    },
+    {
+        "rank": 17,
+        "url": "Edmunds.com",
+        "loadTime": 29469
+    },
+    {
+        "rank": 18,
+        "url": "Fool.com",
+        "loadTime": 8907
+    },
+    {
+        "rank": 19,
+        "url": "Bbb.org",
+        "loadTime": 28619
+    },
+    {
+        "rank": 20,
+        "url": "Babycenter.com",
+        "loadTime": 6093
+    },
+    {
+        "rank": 21,
+        "url": "Bankrate.com",
+        "loadTime": 29217
+    },
+    {
+        "rank": 22,
+        "url": "Travel.state.gov",
+        "loadTime": 30684
+    },
+    {
+        "rank": 23,
+        "url": "Ssa.gov",
+        "loadTime": 92856
+    },
+    {
+        "rank": 24,
+        "url": "Fixya.com",
+        "loadTime": 4708
+    },
+    {
+        "rank": 25,
+        "url": "Carfax.com",
+        "loadTime": 25302
+    },
+    {
+        "rank": 26,
+        "url": "Dpreview.com",
+        "loadTime": 33918
+    },
+    {
+        "rank": 27,
+        "url": "Goodhousekeeping.com",
+        "loadTime": 7546
+    },
+    {
+        "rank": 28,
+        "url": "Thespruce.com",
+        "loadTime": 9913
+    },
+    {
+        "rank": 29,
+        "url": "Consumerreports.org",
+        "loadTime": 36194
+    },
+    {
+        "rank": 30,
+        "url": "Mint.com",
+        "loadTime": 27629
+    },
+    {
+        "rank": 31,
+        "url": "Thekitchn.com",
+        "loadTime": 30352
+    },
+    {
+        "rank": 32,
+        "url": "Money.cnn.com",
+        "loadTime": 32246
+    },
+    {
+        "rank": 33,
+        "url": "Bonappetit.com",
+        "loadTime": 42587
+    },
+    {
+        "rank": 34,
+        "url": "Lifehack.org",
+        "loadTime": 3507
+    },
+    {
+        "rank": 35,
+        "url": "Ehow.com",
+        "loadTime": 26885
+    },
+    {
+        "rank": 36,
+        "url": "Thespruceeats.com",
+        "loadTime": 3447
+    },
+    {
+        "rank": 37,
+        "url": "Bgr.com",
+        "loadTime": 59016
+    },
+    {
+        "rank": 38,
+        "url": "Care.com",
+        "loadTime": 34052
+    },
+    {
+        "rank": 39,
+        "url": "Opendns.com",
+        "loadTime": 15330
+    },
+    {
+        "rank": 40,
+        "url": "Parents.com",
+        "loadTime": 39102
+    },
+    {
+        "rank": 41,
+        "url": "Mouthshut.com",
+        "loadTime": 38584
+    },
+    {
+        "rank": 42,
+        "url": "Realsimple.com",
+        "loadTime": 75742
+    },
+    {
+        "rank": 43,
+        "url": "Food.com",
+        "loadTime": 132264
+    },
+    {
+        "rank": 44,
+        "url": "Phonearena.com",
+        "loadTime": 54289
+    },
+    {
+        "rank": 45,
+        "url": "Bhg.com",
+        "loadTime": 31417
+    },
+    {
+        "rank": 46,
+        "url": "Cafemom.com",
+        "loadTime": 32158
+    },
+    {
+        "rank": 47,
+        "url": "Hgtv.com",
+        "loadTime": 116796
+    },
+    {
+        "rank": 48,
+        "url": "Youneedabudget.com",
+        "loadTime": 35898
+    },
+    {
+        "rank": 49,
+        "url": "Theasianparent.com",
+        "loadTime": 34625
+    },
+    {
+        "rank": 50,
+        "url": "Trustedreviews.com",
+        "loadTime": 34005
+    }
+]

@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Reddit.com",
+        "loadTime": 26069
+    },
+    {
+        "rank": 2,
+        "url": "Cnn.com",
+        "loadTime": 98983
+    },
+    {
+        "rank": 3,
+        "url": "Nytimes.com",
+        "loadTime": 25184
+    },
+    {
+        "rank": 4,
+        "url": "News.google.com",
+        "loadTime": 24327
+    },
+    {
+        "rank": 5,
+        "url": "Theguardian.com",
+        "loadTime": 30258
+    },
+    {
+        "rank": 6,
+        "url": "Shutterstock.com",
+        "loadTime": 3885
+    },
+    {
+        "rank": 7,
+        "url": "Indiatimes.com",
+        "loadTime": 77547
+    },
+    {
+        "rank": 8,
+        "url": "Washingtonpost.com",
+        "loadTime": 27610
+    },
+    {
+        "rank": 9,
+        "url": "News.yahoo.com",
+        "loadTime": 100532
+    },
+    {
+        "rank": 10,
+        "url": "Forbes.com",
+        "loadTime": 161390
+    },
+    {
+        "rank": 11,
+        "url": "Foxnews.com",
+        "loadTime": 117202
+    },
+    {
+        "rank": 12,
+        "url": "Weather.com",
+        "loadTime": 24841
+    },
+    {
+        "rank": 13,
+        "url": "Timesofindia.indiatimes.com",
+        "loadTime": 26528
+    },
+    {
+        "rank": 14,
+        "url": "Cnbc.com",
+        "loadTime": 83727
+    },
+    {
+        "rank": 15,
+        "url": "Bloomberg.com",
+        "loadTime": 28853
+    },
+    {
+        "rank": 16,
+        "url": "Accuweather.com",
+        "loadTime": 93869
+    },
+    {
+        "rank": 17,
+        "url": "Economictimes.indiatimes.com",
+        "loadTime": 80335
+    },
+    {
+        "rank": 18,
+        "url": "Usatoday.com",
+        "loadTime": 147726
+    },
+    {
+        "rank": 19,
+        "url": "Wsj.com",
+        "loadTime": 34588
+    },
+    {
+        "rank": 20,
+        "url": "Nypost.com",
+        "loadTime": 37682
+    },
+    {
+        "rank": 21,
+        "url": "Reuters.com",
+        "loadTime": 29883
+    },
+    {
+        "rank": 22,
+        "url": "Chinadaily.com.cn",
+        "loadTime": 95004
+    },
+    {
+        "rank": 23,
+        "url": "Drudgereport.com",
+        "loadTime": 67388
+    },
+    {
+        "rank": 24,
+        "url": "Chron.com",
+        "loadTime": 114183
+    },
+    {
+        "rank": 25,
+        "url": "Nbcnews.com",
+        "loadTime": 30499
+    },
+    {
+        "rank": 26,
+        "url": "Cbsnews.com",
+        "loadTime": 29635
+    },
+    {
+        "rank": 27,
+        "url": "Usnews.com",
+        "loadTime": 103028
+    },
+    {
+        "rank": 28,
+        "url": "Dw.com",
+        "loadTime": 30890
+    },
+    {
+        "rank": 29,
+        "url": "Wunderground.com",
+        "loadTime": 88416
+    },
+    {
+        "rank": 30,
+        "url": "Thehindu.com",
+        "loadTime": 39896
+    },
+    {
+        "rank": 31,
+        "url": "Indianexpress.com",
+        "loadTime": 78197
+    },
+    {
+        "rank": 32,
+        "url": "Sfgate.com",
+        "loadTime": 100257
+    },
+    {
+        "rank": 33,
+        "url": "Thedailybeast.com",
+        "loadTime": 23557
+    },
+    {
+        "rank": 34,
+        "url": "News.com.au",
+        "loadTime": 26309
+    },
+    {
+        "rank": 35,
+        "url": "Hindustantimes.com",
+        "loadTime": 39371
+    },
+    {
+        "rank": 36,
+        "url": "Time.com",
+        "loadTime": 30118
+    },
+    {
+        "rank": 37,
+        "url": "Thehill.com",
+        "loadTime": 84370
+    },
+    {
+        "rank": 38,
+        "url": "Abcnews.go.com",
+        "loadTime": 116004
+    },
+    {
+        "rank": 39,
+        "url": "Livemint.com",
+        "loadTime": 36990
+    },
+    {
+        "rank": 40,
+        "url": "Weather.gov",
+        "loadTime": 27857
+    },
+    {
+        "rank": 41,
+        "url": "Yr.no",
+        "loadTime": 88825
+    },
+    {
+        "rank": 42,
+        "url": "Theatlantic.com",
+        "loadTime": 25756
+    },
+    {
+        "rank": 43,
+        "url": "Newsnow.co.uk",
+        "loadTime": 26336
+    },
+    {
+        "rank": 44,
+        "url": "Latimes.com",
+        "loadTime": 93150
+    },
+    {
+        "rank": 45,
+        "url": "Mathrubhumi.com",
+        "loadTime": 46311
+    },
+    {
+        "rank": 46,
+        "url": "Euronews.com",
+        "loadTime": 24926
+    },
+    {
+        "rank": 47,
+        "url": "Nationalgeographic.com",
+        "loadTime": 72895
+    },
+    {
+        "rank": 48,
+        "url": "Variety.com",
+        "loadTime": 72155
+    },
+    {
+        "rank": 49,
+        "url": "Irna.ir",
+        "loadTime": 31132
+    },
+    {
+        "rank": 50,
+        "url": "Hollywoodreporter.com",
+        "loadTime": 43257
+    }
+]

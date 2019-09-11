@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Office.com",
+        "loadTime": 24284
+    },
+    {
+        "rank": 2,
+        "url": "Chase.com",
+        "loadTime": 21971
+    },
+    {
+        "rank": 3,
+        "url": "Espn.com",
+        "loadTime": 90554
+    },
+    {
+        "rank": 4,
+        "url": "Indeed.com",
+        "loadTime": 30502
+    },
+    {
+        "rank": 5,
+        "url": "Paypal.com",
+        "loadTime": 61719
+    },
+    {
+        "rank": 6,
+        "url": "Shutterstock.com",
+        "loadTime": 9369
+    },
+    {
+        "rank": 7,
+        "url": "Alibaba.com",
+        "loadTime": 48745
+    },
+    {
+        "rank": 8,
+        "url": "Zillow.com",
+        "loadTime": 48690
+    },
+    {
+        "rank": 9,
+        "url": "Wellsfargo.com",
+        "loadTime": 31394
+    },
+    {
+        "rank": 10,
+        "url": "Finance.yahoo.com",
+        "loadTime": 126565
+    },
+    {
+        "rank": 11,
+        "url": "Forbes.com",
+        "loadTime": 105864
+    },
+    {
+        "rank": 12,
+        "url": "Scribd.com",
+        "loadTime": 14353
+    },
+    {
+        "rank": 13,
+        "url": "Americanexpress.com",
+        "loadTime": 60814
+    },
+    {
+        "rank": 14,
+        "url": "Capitalone.com",
+        "loadTime": 49864
+    },
+    {
+        "rank": 15,
+        "url": "Hdfcbank.com",
+        "loadTime": 47674
+    },
+    {
+        "rank": 16,
+        "url": "Businessinsider.com",
+        "loadTime": 35020
+    },
+    {
+        "rank": 17,
+        "url": "Skype.com",
+        "loadTime": 42139
+    },
+    {
+        "rank": 18,
+        "url": "Icicibank.com",
+        "loadTime": 56032
+    },
+    {
+        "rank": 19,
+        "url": "Samsung.com",
+        "loadTime": 44790
+    },
+    {
+        "rank": 20,
+        "url": "Ups.com",
+        "loadTime": 89372
+    },
+    {
+        "rank": 21,
+        "url": "Fedex.com",
+        "loadTime": 79049
+    },
+    {
+        "rank": 22,
+        "url": "Behance.net",
+        "loadTime": 40809
+    },
+    {
+        "rank": 23,
+        "url": "Investing.com",
+        "loadTime": 120258
+    },
+    {
+        "rank": 24,
+        "url": "Target.com",
+        "loadTime": 56457
+    },
+    {
+        "rank": 25,
+        "url": "Bankofamerica.com",
+        "loadTime": 117815
+    },
+    {
+        "rank": 26,
+        "url": "Bloomberg.com",
+        "loadTime": 26487
+    },
+    {
+        "rank": 27,
+        "url": "Eventbrite.com",
+        "loadTime": 90853
+    },
+    {
+        "rank": 28,
+        "url": "Economictimes.indiatimes.com",
+        "loadTime": 54016
+    },
+    {
+        "rank": 29,
+        "url": "Realtor.com",
+        "loadTime": 112361
+    },
+    {
+        "rank": 30,
+        "url": "Wsj.com",
+        "loadTime": 35273
+    },
+    {
+        "rank": 31,
+        "url": "Adp.com",
+        "loadTime": 258400
+    },
+    {
+        "rank": 32,
+        "url": "Td.com",
+        "loadTime": 72183
+    },
+    {
+        "rank": 33,
+        "url": "Att.com",
+        "loadTime": 57077
+    },
+    {
+        "rank": 34,
+        "url": "Fidelity.com",
+        "loadTime": 40350
+    },
+    {
+        "rank": 35,
+        "url": "Nypost.com",
+        "loadTime": 30719
+    },
+    {
+        "rank": 36,
+        "url": "Reuters.com",
+        "loadTime": 37426
+    },
+    {
+        "rank": 37,
+        "url": "Hm.com",
+        "loadTime": 39793
+    },
+    {
+        "rank": 38,
+        "url": "Marketwatch.com",
+        "loadTime": 108147
+    },
+    {
+        "rank": 39,
+        "url": "Investopedia.com",
+        "loadTime": 26621
+    },
+    {
+        "rank": 40,
+        "url": "Springer.com",
+        "loadTime": 47617
+    },
+    {
+        "rank": 41,
+        "url": "Merriam-webster.com",
+        "loadTime": 72558
+    },
+    {
+        "rank": 42,
+        "url": "Costco.com",
+        "loadTime": 19172
+    },
+    {
+        "rank": 43,
+        "url": "Wiley.com",
+        "loadTime": 67365
+    },
+    {
+        "rank": 44,
+        "url": "Verizonwireless.com",
+        "loadTime": 73451
+    },
+    {
+        "rank": 45,
+        "url": "Istockphoto.com",
+        "loadTime": 31646
+    },
+    {
+        "rank": 46,
+        "url": "Discover.com",
+        "loadTime": 34290
+    },
+    {
+        "rank": 47,
+        "url": "Freelancer.com",
+        "loadTime": 48329
+    },
+    {
+        "rank": 48,
+        "url": "Creditcards.chase.com",
+        "loadTime": 41799
+    },
+    {
+        "rank": 49,
+        "url": "Onlinelibrary.wiley.com",
+        "loadTime": 33164
+    },
+    {
+        "rank": 50,
+        "url": "Cbsnews.com",
+        "loadTime": 21285
+    }
+]

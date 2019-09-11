@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Amazon.com",
+        "loadTime": 62267
+    },
+    {
+        "rank": 2,
+        "url": "Netflix.com",
+        "loadTime": 29472
+    },
+    {
+        "rank": 3,
+        "url": "Ebay.com",
+        "loadTime": 24800
+    },
+    {
+        "rank": 4,
+        "url": "Amazon.co.uk",
+        "loadTime": 37849
+    },
+    {
+        "rank": 5,
+        "url": "Walmart.com",
+        "loadTime": 158866
+    },
+    {
+        "rank": 6,
+        "url": "Etsy.com",
+        "loadTime": 29005
+    },
+    {
+        "rank": 7,
+        "url": "Bestbuy.com",
+        "loadTime": 49275
+    },
+    {
+        "rank": 8,
+        "url": "Ikea.com",
+        "loadTime": 61772
+    },
+    {
+        "rank": 9,
+        "url": "Homedepot.com",
+        "loadTime": 29653
+    },
+    {
+        "rank": 10,
+        "url": "Store.steampowered.com",
+        "loadTime": 6661
+    },
+    {
+        "rank": 11,
+        "url": "Target.com",
+        "loadTime": 27954
+    },
+    {
+        "rank": 12,
+        "url": "Cambridge.org",
+        "loadTime": 12727
+    },
+    {
+        "rank": 13,
+        "url": "Rakuten.com",
+        "loadTime": 14509
+    },
+    {
+        "rank": 14,
+        "url": "Nike.com",
+        "loadTime": 62775
+    },
+    {
+        "rank": 15,
+        "url": "Macys.com",
+        "loadTime": 53571
+    },
+    {
+        "rank": 16,
+        "url": "Hm.com",
+        "loadTime": 44494
+    },
+    {
+        "rank": 17,
+        "url": "Wayfair.com",
+        "loadTime": 70318
+    },
+    {
+        "rank": 18,
+        "url": "Costco.com",
+        "loadTime": 29927
+    },
+    {
+        "rank": 19,
+        "url": "Groupon.com",
+        "loadTime": 21816
+    },
+    {
+        "rank": 20,
+        "url": "Newegg.com",
+        "loadTime": 133679
+    },
+    {
+        "rank": 21,
+        "url": "Wiley.com",
+        "loadTime": 87750
+    },
+    {
+        "rank": 22,
+        "url": "Lowes.com",
+        "loadTime": 134035
+    },
+    {
+        "rank": 23,
+        "url": "Bhphotovideo.com",
+        "loadTime": 20795
+    },
+    {
+        "rank": 24,
+        "url": "Nordstrom.com",
+        "loadTime": 22592
+    },
+    {
+        "rank": 25,
+        "url": "Ticketmaster.com",
+        "loadTime": 65735
+    },
+    {
+        "rank": 26,
+        "url": "Kohls.com",
+        "loadTime": 14608
+    },
+    {
+        "rank": 27,
+        "url": "Iherb.com",
+        "loadTime": 42376
+    },
+    {
+        "rank": 28,
+        "url": "Gap.com",
+        "loadTime": 17069
+    },
+    {
+        "rank": 29,
+        "url": "Zappos.com",
+        "loadTime": 61988
+    },
+    {
+        "rank": 30,
+        "url": "Autotrader.com",
+        "loadTime": 63976
+    },
+    {
+        "rank": 31,
+        "url": "Yoox.com",
+        "loadTime": 69016
+    },
+    {
+        "rank": 32,
+        "url": "Cargurus.com",
+        "loadTime": 227377
+    },
+    {
+        "rank": 33,
+        "url": "Walgreens.com",
+        "loadTime": 128684
+    },
+    {
+        "rank": 34,
+        "url": "Shutterfly.com",
+        "loadTime": 210178
+    },
+    {
+        "rank": 35,
+        "url": "Cars.com",
+        "loadTime": 70196
+    },
+    {
+        "rank": 36,
+        "url": "Staples.com",
+        "loadTime": 21524
+    },
+    {
+        "rank": 37,
+        "url": "Redbubble.com",
+        "loadTime": 25047
+    },
+    {
+        "rank": 38,
+        "url": "Overstock.com",
+        "loadTime": 17218
+    },
+    {
+        "rank": 39,
+        "url": "Sephora.com",
+        "loadTime": 33502
+    },
+    {
+        "rank": 40,
+        "url": "Samsclub.com",
+        "loadTime": 16251
+    },
+    {
+        "rank": 41,
+        "url": "Oup.com",
+        "loadTime": 26705
+    },
+    {
+        "rank": 42,
+        "url": "Barnesandnoble.com",
+        "loadTime": 12938
+    },
+    {
+        "rank": 43,
+        "url": "Bodybuilding.com",
+        "loadTime": 55953
+    },
+    {
+        "rank": 44,
+        "url": "Bedbathandbeyond.com",
+        "loadTime": 37070
+    },
+    {
+        "rank": 45,
+        "url": "Jcpenney.com",
+        "loadTime": 5776
+    },
+    {
+        "rank": 46,
+        "url": "6pm.com",
+        "loadTime": 14656
+    },
+    {
+        "rank": 47,
+        "url": "Cvs.com",
+        "loadTime": 31073
+    },
+    {
+        "rank": 48,
+        "url": "Directv.com",
+        "loadTime": 99691
+    },
+    {
+        "rank": 49,
+        "url": "Legacy.com",
+        "loadTime": 38555
+    },
+    {
+        "rank": 50,
+        "url": "Humblebundle.com",
+        "loadTime": 57043
+    }
+]

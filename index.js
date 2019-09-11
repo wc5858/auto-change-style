@@ -7,6 +7,7 @@ const cpMapper = require('./src/runner/cpMapper');
 const rebuild = require('./src/runner/rebuild');
 const rebuild2 = require('./src/runner/rebuild2');
 const getLeaf = require('./src/runner/getLeaf');
+const getSites = require('./src/runner/getSites');
 
 program
     .version('0.1.0')
@@ -18,6 +19,7 @@ program
     .option('-r, --rebuild', 'Add rebuild')
     .option('-r2, --rebuild2', 'Add rebuild2')
     .option('-r, --getleaf', 'Add getleaf')
+    .option('-g, --getsites', 'Add getsites')
     .parse(process.argv);
 
 if(program.style) {
@@ -43,6 +45,9 @@ if(program.rebuild2) {
 }
 if(program.getleaf) {
     getLeaf()
+}
+if(program.getsites) {
+    getSites()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();

@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Google.com",
+        "loadTime": 23406
+    },
+    {
+        "rank": 2,
+        "url": "Youtube.com",
+        "loadTime": 23514
+    },
+    {
+        "rank": 3,
+        "url": "Mail.google.com",
+        "loadTime": 27458
+    },
+    {
+        "rank": 4,
+        "url": "Docs.google.com",
+        "loadTime": 35188
+    },
+    {
+        "rank": 5,
+        "url": "Facebook.com",
+        "loadTime": 25251
+    },
+    {
+        "rank": 6,
+        "url": "Yahoo.com",
+        "loadTime": 42493
+    },
+    {
+        "rank": 7,
+        "url": "En.wikipedia.org",
+        "loadTime": 27697
+    },
+    {
+        "rank": 8,
+        "url": "Search.yahoo.com",
+        "loadTime": 1259
+    },
+    {
+        "rank": 9,
+        "url": "Bing.com",
+        "loadTime": 12111
+    },
+    {
+        "rank": 10,
+        "url": "Office.com",
+        "loadTime": 46666
+    },
+    {
+        "rank": 11,
+        "url": "Microsoft.com",
+        "loadTime": 20244
+    },
+    {
+        "rank": 12,
+        "url": "Twitter.com",
+        "loadTime": 10093
+    },
+    {
+        "rank": 13,
+        "url": "Stackoverflow.com",
+        "loadTime": 26595
+    },
+    {
+        "rank": 14,
+        "url": "Mail.yahoo.com",
+        "loadTime": 16070
+    },
+    {
+        "rank": 15,
+        "url": "Wordpress.com",
+        "loadTime": 88708
+    },
+    {
+        "rank": 16,
+        "url": "Msn.com",
+        "loadTime": 114490
+    },
+    {
+        "rank": 17,
+        "url": "Apple.com",
+        "loadTime": 26040
+    },
+    {
+        "rank": 18,
+        "url": "Dropbox.com",
+        "loadTime": 26007
+    },
+    {
+        "rank": 19,
+        "url": "Adobe.com",
+        "loadTime": 106014
+    },
+    {
+        "rank": 20,
+        "url": "Linkedin.com",
+        "loadTime": 12198
+    },
+    {
+        "rank": 21,
+        "url": "Tumblr.com",
+        "loadTime": 26178
+    },
+    {
+        "rank": 22,
+        "url": "Play.google.com",
+        "loadTime": 24629
+    },
+    {
+        "rank": 23,
+        "url": "Github.com",
+        "loadTime": 36670
+    },
+    {
+        "rank": 24,
+        "url": "Imgur.com",
+        "loadTime": 27908
+    },
+    {
+        "rank": 25,
+        "url": "Soundcloud.com",
+        "loadTime": 25539
+    },
+    {
+        "rank": 26,
+        "url": "Salesforce.com",
+        "loadTime": 65924
+    },
+    {
+        "rank": 27,
+        "url": "Paypal.com",
+        "loadTime": 17399
+    },
+    {
+        "rank": 28,
+        "url": "Pinterest.com",
+        "loadTime": 14598
+    },
+    {
+        "rank": 29,
+        "url": "Wikihow.com",
+        "loadTime": 88079
+    },
+    {
+        "rank": 30,
+        "url": "Cnet.com",
+        "loadTime": 202513
+    },
+    {
+        "rank": 31,
+        "url": "Trello.com",
+        "loadTime": 59121
+    },
+    {
+        "rank": 32,
+        "url": "Fiverr.com",
+        "loadTime": 118208
+    },
+    {
+        "rank": 33,
+        "url": "Slideshare.net",
+        "loadTime": 24332
+    },
+    {
+        "rank": 34,
+        "url": "Mediafire.com",
+        "loadTime": 103221
+    },
+    {
+        "rank": 35,
+        "url": "Blogger.com",
+        "loadTime": 32883
+    },
+    {
+        "rank": 36,
+        "url": "Godaddy.com",
+        "loadTime": 47954
+    },
+    {
+        "rank": 37,
+        "url": "Zendesk.com",
+        "loadTime": 94539
+    },
+    {
+        "rank": 38,
+        "url": "Ask.com",
+        "loadTime": 32689
+    },
+    {
+        "rank": 39,
+        "url": "Aws.amazon.com",
+        "loadTime": 41061
+    },
+    {
+        "rank": 40,
+        "url": "Vimeo.com",
+        "loadTime": 29821
+    },
+    {
+        "rank": 41,
+        "url": "Archive.org",
+        "loadTime": 36819
+    },
+    {
+        "rank": 42,
+        "url": "Speedtest.net",
+        "loadTime": 52506
+    },
+    {
+        "rank": 43,
+        "url": "Intuit.com",
+        "loadTime": 68281
+    },
+    {
+        "rank": 44,
+        "url": "Pixabay.com",
+        "loadTime": 10413
+    },
+    {
+        "rank": 45,
+        "url": "Support.microsoft.com",
+        "loadTime": 54037
+    },
+    {
+        "rank": 46,
+        "url": "Scribd.com",
+        "loadTime": 10659
+    },
+    {
+        "rank": 47,
+        "url": "Duckduckgo.com",
+        "loadTime": 27838
+    },
+    {
+        "rank": 48,
+        "url": "Mozilla.org",
+        "loadTime": 53564
+    },
+    {
+        "rank": 49,
+        "url": "Shopify.com",
+        "loadTime": 65920
+    },
+    {
+        "rank": 50,
+        "url": "Evernote.com",
+        "loadTime": 87389
+    }
+]

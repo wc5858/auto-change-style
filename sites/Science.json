@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Translate.google.com",
+        "loadTime": 25451
+    },
+    {
+        "rank": 2,
+        "url": "Researchgate.net",
+        "loadTime": 32891
+    },
+    {
+        "rank": 3,
+        "url": "Ncbi.nlm.nih.gov",
+        "loadTime": 39452
+    },
+    {
+        "rank": 4,
+        "url": "Sciencedirect.com",
+        "loadTime": 30573
+    },
+    {
+        "rank": 5,
+        "url": "Reverso.net",
+        "loadTime": 96762
+    },
+    {
+        "rank": 6,
+        "url": "Coinmarketcap.com",
+        "loadTime": 95383
+    },
+    {
+        "rank": 7,
+        "url": "Duolingo.com",
+        "loadTime": 65607
+    },
+    {
+        "rank": 8,
+        "url": "Elsevier.com",
+        "loadTime": 34268
+    },
+    {
+        "rank": 9,
+        "url": "Urbandictionary.com",
+        "loadTime": 67936
+    },
+    {
+        "rank": 10,
+        "url": "Timeanddate.com",
+        "loadTime": 54467
+    },
+    {
+        "rank": 11,
+        "url": "Autodesk.com",
+        "loadTime": 41826
+    },
+    {
+        "rank": 12,
+        "url": "Mayoclinic.org",
+        "loadTime": 61854
+    },
+    {
+        "rank": 13,
+        "url": "Ted.com",
+        "loadTime": 48732
+    },
+    {
+        "rank": 14,
+        "url": "Nature.com",
+        "loadTime": 72317
+    },
+    {
+        "rank": 15,
+        "url": "Ieee.org",
+        "loadTime": 35500
+    },
+    {
+        "rank": 16,
+        "url": "Noaa.gov",
+        "loadTime": 39726
+    },
+    {
+        "rank": 17,
+        "url": "Weather.gov",
+        "loadTime": 260665
+    },
+    {
+        "rank": 18,
+        "url": "Jstor.org",
+        "loadTime": 85657
+    },
+    {
+        "rank": 19,
+        "url": "Howstuffworks.com",
+        "loadTime": 107965
+    },
+    {
+        "rank": 20,
+        "url": "Arxiv.org",
+        "loadTime": 109611
+    },
+    {
+        "rank": 21,
+        "url": "Jma.go.jp",
+        "loadTime": 462
+    },
+    {
+        "rank": 22,
+        "url": "Nationalgeographic.com",
+        "loadTime": 186416
+    },
+    {
+        "rank": 23,
+        "url": "Mathworks.com",
+        "loadTime": 149258
+    },
+    {
+        "rank": 24,
+        "url": "Berkeley.edu",
+        "loadTime": 41558
+    },
+    {
+        "rank": 25,
+        "url": "Acs.org",
+        "loadTime": 131149
+    },
+    {
+        "rank": 26,
+        "url": "Fao.org",
+        "loadTime": 53670
+    },
+    {
+        "rank": 27,
+        "url": "Localbitcoins.com",
+        "loadTime": 26067
+    },
+    {
+        "rank": 28,
+        "url": "Economist.com",
+        "loadTime": 26431
+    },
+    {
+        "rank": 29,
+        "url": "Livescience.com",
+        "loadTime": 170054
+    },
+    {
+        "rank": 30,
+        "url": "Biomedcentral.com",
+        "loadTime": 110492
+    },
+    {
+        "rank": 31,
+        "url": "Usda.gov",
+        "loadTime": 195984
+    },
+    {
+        "rank": 32,
+        "url": "Mdpi.com",
+        "loadTime": 18396
+    },
+    {
+        "rank": 33,
+        "url": "He.wikipedia.org",
+        "loadTime": 22700
+    },
+    {
+        "rank": 34,
+        "url": "Symbolab.com",
+        "loadTime": 36095
+    },
+    {
+        "rank": 35,
+        "url": "Nps.gov",
+        "loadTime": 35099
+    },
+    {
+        "rank": 36,
+        "url": "Sciencedaily.com",
+        "loadTime": 53045
+    },
+    {
+        "rank": 37,
+        "url": "Italki.com",
+        "loadTime": 34777
+    },
+    {
+        "rank": 38,
+        "url": "Usgs.gov",
+        "loadTime": 54623
+    },
+    {
+        "rank": 39,
+        "url": "Sciencemag.org",
+        "loadTime": 58391
+    },
+    {
+        "rank": 40,
+        "url": "Hindawi.com",
+        "loadTime": 93666
+    },
+    {
+        "rank": 41,
+        "url": "Rsc.org",
+        "loadTime": 46978
+    },
+    {
+        "rank": 42,
+        "url": "Bom.gov.au",
+        "loadTime": 28192
+    },
+    {
+        "rank": 43,
+        "url": "Space.com",
+        "loadTime": 57326
+    },
+    {
+        "rank": 44,
+        "url": "Plos.org",
+        "loadTime": 14461
+    },
+    {
+        "rank": 45,
+        "url": "Frontiersin.org",
+        "loadTime": 41601
+    },
+    {
+        "rank": 46,
+        "url": "Desmos.com",
+        "loadTime": 26099
+    },
+    {
+        "rank": 47,
+        "url": "23andme.com",
+        "loadTime": 6302
+    },
+    {
+        "rank": 48,
+        "url": "Apa.org",
+        "loadTime": 37052
+    },
+    {
+        "rank": 49,
+        "url": "Citeseerx.ist.psu.edu",
+        "loadTime": 12909
+    },
+    {
+        "rank": 50,
+        "url": "Nhc.noaa.gov",
+        "loadTime": 5575
+    }
+]

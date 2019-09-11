@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Google.com",
+        "loadTime": 30210
+    },
+    {
+        "rank": 2,
+        "url": "Yahoo.com",
+        "loadTime": 25572
+    },
+    {
+        "rank": 3,
+        "url": "Amazon.com",
+        "loadTime": 56270
+    },
+    {
+        "rank": 4,
+        "url": "Microsoft.com",
+        "loadTime": 42476
+    },
+    {
+        "rank": 5,
+        "url": "Google.co.in",
+        "loadTime": 25981
+    },
+    {
+        "rank": 6,
+        "url": "Amazon.co.jp",
+        "loadTime": 27316
+    },
+    {
+        "rank": 7,
+        "url": "Apple.com",
+        "loadTime": 15615
+    },
+    {
+        "rank": 8,
+        "url": "Adobe.com",
+        "loadTime": 93465
+    },
+    {
+        "rank": 9,
+        "url": "Amazon.co.uk",
+        "loadTime": 39888
+    },
+    {
+        "rank": 10,
+        "url": "Chase.com",
+        "loadTime": 35753
+    },
+    {
+        "rank": 11,
+        "url": "Nytimes.com",
+        "loadTime": 33017
+    },
+    {
+        "rank": 12,
+        "url": "Walmart.com",
+        "loadTime": 136254
+    },
+    {
+        "rank": 13,
+        "url": "Nih.gov",
+        "loadTime": 44921
+    },
+    {
+        "rank": 14,
+        "url": "Bbc.co.uk",
+        "loadTime": 24219
+    },
+    {
+        "rank": 15,
+        "url": "Theguardian.com",
+        "loadTime": 30081
+    },
+    {
+        "rank": 16,
+        "url": "Flipkart.com",
+        "loadTime": 75219
+    },
+    {
+        "rank": 17,
+        "url": "Google.co.uk",
+        "loadTime": 25539
+    },
+    {
+        "rank": 18,
+        "url": "Indiatimes.com",
+        "loadTime": 106715
+    },
+    {
+        "rank": 19,
+        "url": "Alibaba.com",
+        "loadTime": 23649
+    },
+    {
+        "rank": 20,
+        "url": "Zillow.com",
+        "loadTime": 72770
+    },
+    {
+        "rank": 21,
+        "url": "Wellsfargo.com",
+        "loadTime": 79590
+    },
+    {
+        "rank": 22,
+        "url": "Bestbuy.com",
+        "loadTime": 55481
+    },
+    {
+        "rank": 23,
+        "url": "Nlm.nih.gov",
+        "loadTime": 80938
+    },
+    {
+        "rank": 24,
+        "url": "Tripadvisor.com",
+        "loadTime": 88612
+    },
+    {
+        "rank": 25,
+        "url": "Amazon.ca",
+        "loadTime": 134480
+    },
+    {
+        "rank": 26,
+        "url": "Ebay.co.uk",
+        "loadTime": 11209
+    },
+    {
+        "rank": 27,
+        "url": "Americanexpress.com",
+        "loadTime": 34867
+    },
+    {
+        "rank": 28,
+        "url": "Ikea.com",
+        "loadTime": 23533
+    },
+    {
+        "rank": 29,
+        "url": "Asos.com",
+        "loadTime": 79250
+    },
+    {
+        "rank": 30,
+        "url": "Bet365.com",
+        "loadTime": 29919
+    },
+    {
+        "rank": 31,
+        "url": "Dailymail.co.uk",
+        "loadTime": 28676
+    },
+    {
+        "rank": 32,
+        "url": "Weather.com",
+        "loadTime": 51867
+    },
+    {
+        "rank": 33,
+        "url": "Usps.com",
+        "loadTime": 88017
+    },
+    {
+        "rank": 34,
+        "url": "Ndtv.com",
+        "loadTime": 36813
+    },
+    {
+        "rank": 35,
+        "url": "Icicibank.com",
+        "loadTime": 220466
+    },
+    {
+        "rank": 36,
+        "url": "Samsung.com",
+        "loadTime": 35765
+    },
+    {
+        "rank": 37,
+        "url": "Homedepot.com",
+        "loadTime": 34229
+    },
+    {
+        "rank": 38,
+        "url": "Xfinity.com",
+        "loadTime": 67053
+    },
+    {
+        "rank": 39,
+        "url": "Ups.com",
+        "loadTime": 46105
+    },
+    {
+        "rank": 40,
+        "url": "Google.com.au",
+        "loadTime": 29661
+    },
+    {
+        "rank": 41,
+        "url": "Aol.com",
+        "loadTime": 190667
+    },
+    {
+        "rank": 42,
+        "url": "Fedex.com",
+        "loadTime": 28069
+    },
+    {
+        "rank": 43,
+        "url": "Rt.com",
+        "loadTime": 55347
+    },
+    {
+        "rank": 44,
+        "url": "Hp.com",
+        "loadTime": 62412
+    },
+    {
+        "rank": 45,
+        "url": "Target.com",
+        "loadTime": 23897
+    },
+    {
+        "rank": 46,
+        "url": "Bankofamerica.com",
+        "loadTime": 56719
+    },
+    {
+        "rank": 47,
+        "url": "Accuweather.com",
+        "loadTime": 28223
+    },
+    {
+        "rank": 48,
+        "url": "Cambridge.org",
+        "loadTime": 7747
+    },
+    {
+        "rank": 49,
+        "url": "Naukri.com",
+        "loadTime": 50551
+    },
+    {
+        "rank": 50,
+        "url": "Irctc.co.in",
+        "loadTime": 78949
+    }
+]

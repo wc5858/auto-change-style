@@ -1,0 +1,252 @@
+[
+    {
+        "rank": 1,
+        "url": "Stackoverflow.com",
+        "loadTime": 22330
+    },
+    {
+        "rank": 2,
+        "url": "Udemy.com",
+        "loadTime": 9594
+    },
+    {
+        "rank": 3,
+        "url": "Archive.org",
+        "loadTime": 23268
+    },
+    {
+        "rank": 4,
+        "url": "Nlm.nih.gov",
+        "loadTime": 68271
+    },
+    {
+        "rank": 5,
+        "url": "Thesaurus.com",
+        "loadTime": 38633
+    },
+    {
+        "rank": 6,
+        "url": "Goodreads.com",
+        "loadTime": 24963
+    },
+    {
+        "rank": 7,
+        "url": "Cambridge.org",
+        "loadTime": 17109
+    },
+    {
+        "rank": 8,
+        "url": "Dictionary.cambridge.org",
+        "loadTime": 39923
+    },
+    {
+        "rank": 9,
+        "url": "Wordreference.com",
+        "loadTime": 36549
+    },
+    {
+        "rank": 10,
+        "url": "Blackboard.com",
+        "loadTime": 67486
+    },
+    {
+        "rank": 11,
+        "url": "Coursera.org",
+        "loadTime": 49732
+    },
+    {
+        "rank": 12,
+        "url": "Elsevier.com",
+        "loadTime": 49143
+    },
+    {
+        "rank": 13,
+        "url": "Investopedia.com",
+        "loadTime": 77539
+    },
+    {
+        "rank": 14,
+        "url": "Answers.yahoo.com",
+        "loadTime": 47981
+    },
+    {
+        "rank": 15,
+        "url": "Merriam-webster.com",
+        "loadTime": 111509
+    },
+    {
+        "rank": 16,
+        "url": "Urbandictionary.com",
+        "loadTime": 53101
+    },
+    {
+        "rank": 17,
+        "url": "Mit.edu",
+        "loadTime": 17062
+    },
+    {
+        "rank": 18,
+        "url": "Thefreedictionary.com",
+        "loadTime": 120333
+    },
+    {
+        "rank": 19,
+        "url": "Wiktionary.org",
+        "loadTime": 25741
+    },
+    {
+        "rank": 20,
+        "url": "Ed.gov",
+        "loadTime": 72777
+    },
+    {
+        "rank": 21,
+        "url": "Harvard.edu",
+        "loadTime": 90873
+    },
+    {
+        "rank": 22,
+        "url": "Edx.org",
+        "loadTime": 141933
+    },
+    {
+        "rank": 23,
+        "url": "Britannica.com",
+        "loadTime": 160560
+    },
+    {
+        "rank": 24,
+        "url": "Whitepages.com",
+        "loadTime": 17330
+    },
+    {
+        "rank": 25,
+        "url": "Stanford.edu",
+        "loadTime": 11182
+    },
+    {
+        "rank": 26,
+        "url": "En.wiktionary.org",
+        "loadTime": 16275
+    },
+    {
+        "rank": 27,
+        "url": "Yourdictionary.com",
+        "loadTime": 68369
+    },
+    {
+        "rank": 28,
+        "url": "Thoughtco.com",
+        "loadTime": 34633
+    },
+    {
+        "rank": 29,
+        "url": "Mapquest.com",
+        "loadTime": 167131
+    },
+    {
+        "rank": 30,
+        "url": "Psu.edu",
+        "loadTime": 268805
+    },
+    {
+        "rank": 31,
+        "url": "Oup.com",
+        "loadTime": 38125
+    },
+    {
+        "rank": 32,
+        "url": "Collegeboard.org",
+        "loadTime": 45186
+    },
+    {
+        "rank": 33,
+        "url": "Howstuffworks.com",
+        "loadTime": 115179
+    },
+    {
+        "rank": 34,
+        "url": "Spanishdict.com",
+        "loadTime": 61233
+    },
+    {
+        "rank": 35,
+        "url": "Turnitin.com",
+        "loadTime": 123997
+    },
+    {
+        "rank": 36,
+        "url": "Lynda.com",
+        "loadTime": 47669
+    },
+    {
+        "rank": 37,
+        "url": "Berkeley.edu",
+        "loadTime": 30984
+    },
+    {
+        "rank": 38,
+        "url": "Udacity.com",
+        "loadTime": 29105
+    },
+    {
+        "rank": 39,
+        "url": "Brainyquote.com",
+        "loadTime": 11578
+    },
+    {
+        "rank": 40,
+        "url": "Tableau.com",
+        "loadTime": 55459
+    },
+    {
+        "rank": 41,
+        "url": "Linguee.com",
+        "loadTime": 21317
+    },
+    {
+        "rank": 42,
+        "url": "Tureng.com",
+        "loadTime": 19697
+    },
+    {
+        "rank": 43,
+        "url": "Yellowpages.com",
+        "loadTime": 52293
+    },
+    {
+        "rank": 44,
+        "url": "Usp.br",
+        "loadTime": "error"
+    },
+    {
+        "rank": 45,
+        "url": "Faradars.org",
+        "loadTime": 43344
+    },
+    {
+        "rank": 46,
+        "url": "Ukzn.ac.za",
+        "loadTime": 120529
+    },
+    {
+        "rank": 47,
+        "url": "Dict.cc",
+        "loadTime": 16596
+    },
+    {
+        "rank": 48,
+        "url": "Cornell.edu",
+        "loadTime": 81345
+    },
+    {
+        "rank": 49,
+        "url": "Answers.com",
+        "loadTime": 41416
+    },
+    {
+        "rank": 50,
+        "url": "Ldoceonline.com",
+        "loadTime": 28936
+    }
+]
