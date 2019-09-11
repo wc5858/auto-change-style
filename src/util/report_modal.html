@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div id="logs"></div>
+    <div style="display: flex">
+        <div style="width: 48%">
+            <div id="info1"></div>
+            <div id="container1" style="height: 100vh"></div>
+        </div>
+        <div style="width: 48%">
+            <div id="info2"></div>
+            <div id="container2" style="height: 100vh"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script type="text/javascript">
+        var data = {{ data }}
+        var dom1 = document.getElementById("container1");
+        var dom2 = document.getElementById("container2");
+        var myChart1 = echarts.init(dom1);
+        var myChart2 = echarts.init(dom2);
+
+        var formatUtil = echarts.format;
+
+        const { before, after, logs } = data;
+        document.getElementById("logs").innerHTML = logs.reduce((str, log) => `${str}<p>${log}</p>`, '')
+        document.getElementById("info1").innerHTML = Object.entries(before.bomtypes).reduce((str, [key, value]) => `${str}<p>${key}:${value}</p>`, '')
+            + `<p>countText:${before.countText}</p>` + `<p>countImg:${before.countImg}</p>`
+        document.getElementById("info2").innerHTML = Object.entries(after.bomtypes).reduce((str, [key, value]) => `${str}<p>${key}:${value}</p>`, '')
+            + `<p>countText:${after.countText}</p>` + `<p>countImg:${after.countImg}</p>`
+        function getLevelOption() {
+            return [
+                {
+                    itemStyle: {
+                        normal: {
+                            borderWidth: 0,
+                            gapWidth: 5
+                        }
+                    }
+                },
+                {
+                    itemStyle: {
+                        normal: {
+                            gapWidth: 1
+                        }
+                    }
+                },
+                {
+                    colorSaturation: [0.35, 0.5],
+                    itemStyle: {
+                        normal: {
+                            gapWidth: 1,
+                            borderColorSaturation: 0.6
+                        }
+                    }
+                }
+            ];
+        }
+
+        myChart1.setOption({
+
+            title: {
+                text: 'Before',
+                left: 'center'
+            },
+
+            // tooltip: {
+            //     formatter: function (info) {
+            //         var value = info.value;
+            //         var treePathInfo = info.treePathInfo;
+            //         var treePath = [];
+
+            //         for (var i = 1; i < treePathInfo.length; i++) {
+            //             treePath.push(treePathInfo[i].name);
+            //         }
+
+            //         return [
+            //             '<div class="tooltip-title">' + formatUtil.encodeHTML(treePath.join('/')) + '</div>',
+            //             'Disk Usage: ' + formatUtil.addCommas(value) + ' KB',
+            //         ].join('');
+            //     }
+            // },
+
+            series: [
+                {
+                    name: 'Before',
+                    type: 'treemap',
+                    visibleMin: 300,
+                    label: {
+                        show: true,
+                        formatter: '{b}'
+                    },
+                    itemStyle: {
+                        normal: {
+                            borderColor: '#fff'
+                        }
+                    },
+                    levels: getLevelOption(),
+                    data: before.tree
+                }
+            ]
+        });
+
+        myChart2.setOption({
+
+            title: {
+                text: 'After',
+                left: 'center'
+            },
+
+            series: [
+                {
+                    name: 'After',
+                    type: 'treemap',
+                    visibleMin: 300,
+                    label: {
+                        show: true,
+                        formatter: '{b}'
+                    },
+                    itemStyle: {
+                        normal: {
+                            borderColor: '#fff'
+                        }
+                    },
+                    levels: getLevelOption(),
+                    data: after.tree
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

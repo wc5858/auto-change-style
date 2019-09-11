@@ -5,6 +5,7 @@ const fsStat = util.promisify(fs.stat);
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
+const c = require('child_process');
 
 const dataPath = './data/'
 
@@ -29,6 +30,19 @@ async function saveData(name, data, dir) {
 async function readJson(file) {
     let data = await readFile(dataPath + file + '.json')
     return JSON.parse(data)
+}
+
+async function generatorReport(data) {
+    try {
+        let html = await readFile('./src/util/report_modal.html')
+        html = html.toString().replace('{{ data }}', JSON.stringify(data, null, 4))
+        mkdir('./report/')
+        const url = `./report/${+new Date()}_report.html`
+        await writeFile(url, html, 'utf8')
+        c.exec(`start ${url}`)
+    } catch(e) {
+        console.log(e)
+    }
 }
 
 // 合并多个json数据文件
@@ -124,5 +138,6 @@ module.exports = {
     mkdir,
     mergeData,
     saveData,
-    readJson
+    readJson,
+    generatorReport,
 }

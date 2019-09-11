@@ -1,20 +1,21 @@
 const { Builder } = require('selenium-webdriver');
+const analysis = require('../segmentation/analysis');
 const { rebuildHTML } = require('../util/domTree');
 const getBundle = require('../util/getBundle');
-const { readJson } = require('../util/localFs');
+const { readJson, generatorReport } = require('../util/localFs');
 const saveImg = require('../util/saveImage');
 
 const list = [
-    // {
-    //     site: 'github',
-    //     protocol: 'https',
-    //     root: 'github.com'
-    // }
     {
-        site: 'element',
+        site: 'github',
         protocol: 'https',
-        root: 'element.eleme.cn/#/zh-CN/component/installation'
+        root: 'github.com'
     }
+    // {
+    //     site: 'element',
+    //     protocol: 'https',
+    //     root: 'element.eleme.cn/#/zh-CN/component/installation'
+    // }
 ]
 
 
@@ -89,8 +90,15 @@ module.exports = async function () {
                 width: 1200
             })
             await driver.get(site.protocol + '://' + site.root)
+            const before = await analysis(driver, {
+                pac: 1,
+                returnType : 'wprima'
+            })
             imgData = await driver.takeScreenshot()
             saveImg(site.site + '-change-before' + (+new Date()), imgData)
+
+            await driver.get(site.protocol + '://' + site.root)
+
             const bundle = getBundle('./src/util/domTree.js', 'domTree')
 
             let node = await driver.executeScript(function () {
@@ -194,7 +202,8 @@ module.exports = async function () {
             dealTree(node, null, PRE_LIFE_CIRCLE)
 
             doReplace(node)
-            console.log(`${replaced} of ${countLeaf} has been replaced`)
+            const logs = []
+            logs.push(`${replaced} of ${countLeaf} has been replaced`)
 
             let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head>"
             html += rebuildHTML(node) + '</html>'
@@ -215,10 +224,21 @@ module.exports = async function () {
                     bundle
                 }
             )
+
+            const after = await analysis(driver, {
+                pac: 1,
+                returnType : 'wprima'
+            })
+
             imgData = await driver.takeScreenshot()
             saveImg(site.site + '-change-after' + (+new Date()), imgData)
             dealTree(newNode, null, AFTER_LIFE_CIRCLE)
-            console.log(`${countParentDiff} of ${count} 改变了节点关系`)
+            logs.push(`${countParentDiff} of ${count} 改变了节点关系`)
+            generatorReport({
+                before,
+                after,
+                logs,
+            })
         }
 
     } catch (e) {
