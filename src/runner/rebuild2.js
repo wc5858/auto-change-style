@@ -6,11 +6,21 @@ const { readJson, generatorReport } = require('../util/localFs');
 const saveImg = require('../util/saveImage');
 
 const list = [
+    // {
+    //     site: 'github',
+    //     protocol: 'https',
+    //     root: 'github.com'
+    // }
     {
-        site: 'github',
+        site: 'www.cancer.gov',
         protocol: 'https',
-        root: 'github.com'
+        root: 'www.cancer.gov/contact'
     }
+    // {
+    //     site: '网易云音乐',
+    //     protocol: 'https',
+    //     root: 'music.163.com'
+    // }
     // {
     //     site: 'element',
     //     protocol: 'https',
@@ -225,20 +235,20 @@ module.exports = async function () {
                 }
             )
 
-            const after = await analysis(driver, {
-                pac: 1,
-                returnType : 'wprima'
-            })
+            // const after = await analysis(driver, {
+            //     pac: 1,
+            //     returnType : 'wprima'
+            // })
 
             imgData = await driver.takeScreenshot()
             saveImg(site.site + '-change-after' + (+new Date()), imgData)
             dealTree(newNode, null, AFTER_LIFE_CIRCLE)
             logs.push(`${countParentDiff} of ${count} 改变了节点关系`)
-            generatorReport({
-                before,
-                after,
-                logs,
-            })
+            // generatorReport({
+            //     before,
+            //     after,
+            //     logs,
+            // })
         }
 
     } catch (e) {
