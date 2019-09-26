@@ -1,3 +1,5 @@
+const { rebuildHTML } = require('./domTree');
+
 function getCp(map, node, parent, index) {
     if (!node) {
         return
@@ -111,7 +113,60 @@ function computeSimilarity(cp, sourceCps, usingCssSimilarity) {
     }
 }
 
+function searchNode(node) {
+    const satck = [node];
+    const tagSequence = [];
+    const classList = [];
+    while(satck.length > 0) {
+        let cur = satck.pop();
+        if (!cur.info) {
+            continue;
+        }
+        tagSequence.push(cur.info.tag);
+        classList.push(...cur.info.class);
+        if (cur.children) {
+            satck.push(...cur.children);
+        }
+    }
+    return {
+        tagSequence,
+        classList,
+    };
+}
+
+function getLeafComponent(node) {
+    let map = new Map();
+    let id = 0;
+
+    function helper(node, ancestor) {
+        if (node.children) {
+            for (const i of node.children) {
+                if (i.info && i.info.bomtype && i.info.bomtype !== 'null' && i.info.bomtype !== 'PAGE' && i.info.bomtype !== 'CONTENT') {
+                    // 祖先组件不是叶组件，删除
+                    if (ancestor && map.has(ancestor)) {
+                        map.delete(ancestor);
+                    }
+                    id += 1;
+                    map.set(id, i);
+                    helper(i, id);
+                } else {
+                    helper(i, ancestor);
+                }
+            }
+        }
+    }
+
+    helper(node);
+
+    return [...map.values()].map(node => ({
+        node,
+        html: rebuildHTML(node),
+        ...searchNode(node),
+    }));
+}
+
 module.exports = {
     getCp,
-    computeSimilarity
+    computeSimilarity,
+    getLeafComponent,
 }

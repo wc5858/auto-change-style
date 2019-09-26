@@ -45,6 +45,19 @@ async function generatorReport(data) {
     }
 }
 
+async function generatorCompare(data) {
+    try {
+        let html = await readFile('./src/util/compare_modal.html')
+        html = html.toString().replace('{{ data }}', JSON.stringify(data, null, 4))
+        mkdir('./compare/')
+        const url = `./compare/${+new Date()}_compare.html`
+        await writeFile(url, html, 'utf8')
+        c.exec(`start ${url}`)
+    } catch(e) {
+        console.log(e)
+    }
+}
+
 // 合并多个json数据文件
 // 顺便计算权重
 // TODO：从功能内聚的角度来讲，最好把计算权重的部分拆分出来，不过权重算法可能要调整
@@ -140,4 +153,5 @@ module.exports = {
     saveData,
     readJson,
     generatorReport,
+    generatorCompare,
 }

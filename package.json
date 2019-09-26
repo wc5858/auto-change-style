@@ -9,19 +9,23 @@
     "seg": "node index --autoseg",
     "change": "node index --change",
     "cp": "node index --component",
+    "cp2": "node index --component2",
     "map": "node index --mapper",
     "rebuild": "node index --rebuild",
     "rebuild2": "node index --rebuild2",
     "getleaf": "node --max-old-space-size=4096 index --getleaf",
-    "getsites": "node index --getsites"
+    "getsites": "node index --getsites",
+    "compare": "node index --compare"
   },
   "author": "wc47501",
   "license": "UNLICENSED",
   "dependencies": {
     "browserify": "^16.2.3",
     "commander": "^2.19.0",
+    "difflib": "^0.2.4",
     "html2hscript": "^2.0.1",
     "selenium-webdriver": "^4.0.0-alpha.1",
+    "synonyms": "^1.0.1",
     "virtual-dom": "^2.1.1"
   }
 }

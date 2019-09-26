@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div id="logs"></div>
+    <style>
+        .show-box {
+            border: 2px solid red;
+        }
+    </style>
+    <script type="text/javascript">
+        var data = {{ data }}
+        document.getElementById("logs").innerHTML = data.reduce((html, cur) => 
+            `
+                ${html}
+                <div class="show-box">
+                    <div>${cur.html}</div>
+                    <div>${cur.tagSequence.join(' ')}</div>
+                    <div>${cur.classList.join(' ')}</div>
+                    <div>最佳匹配</div>
+                    <div>${cur.similarity.html}</div>
+                    <div>${cur.similarity.tagSequence.join(' ')}</div>
+                    <div>${cur.similarity.classList.join(' ')}</div>
+                </div>
+            `
+        , '')
+    </script>
+</body>
+
+</html>

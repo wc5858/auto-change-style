@@ -3,11 +3,13 @@ const segRunner = require('./src/runner/segRunner');
 const styleRunner = require('./src/runner/styleRunner');
 const changeRunner = require('./src/runner/changeRunner');
 const cpRunner = require('./src/runner/cpRunner');
+const cpRunner2 = require('./src/runner/cpRunner2');
 const cpMapper = require('./src/runner/cpMapper');
 const rebuild = require('./src/runner/rebuild');
 const rebuild2 = require('./src/runner/rebuild2');
 const getLeaf = require('./src/runner/getLeaf');
 const getSites = require('./src/runner/getSites');
+const compare = require('./src/runner/compare');
 
 program
     .version('0.1.0')
@@ -15,11 +17,13 @@ program
     .option('-a, --autoseg', 'Add autoseg')
     .option('-c, --change', 'Add change')
     .option('-p, --component', 'Add component')
+    .option('-p2, --component2', 'Add component2')
     .option('-m, --mapper', 'Add mapper')
     .option('-r, --rebuild', 'Add rebuild')
     .option('-r2, --rebuild2', 'Add rebuild2')
     .option('-r, --getleaf', 'Add getleaf')
     .option('-g, --getsites', 'Add getsites')
+    .option('-cpr, --compare', 'Add compare')
     .parse(process.argv);
 
 if(program.style) {
@@ -33,6 +37,9 @@ if(program.change) {
 }
 if(program.component) {
     cpRunner()
+}
+if(program.component2) {
+    cpRunner2()
 }
 if(program.mapper) {
     cpMapper()
@@ -48,6 +55,9 @@ if(program.getleaf) {
 }
 if(program.getsites) {
     getSites()
+}
+if(program.compare) {
+    compare()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();

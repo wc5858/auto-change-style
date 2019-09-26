@@ -32,7 +32,7 @@ function getNodeInfo(node) {
         class: node.classList.value.split(' ')
     }
     if (data.tag == 'IMG') {
-        data.src = node.getAttribute('src')
+        data.src = node.currentSrc
     }
     return data
 }
