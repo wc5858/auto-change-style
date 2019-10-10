@@ -58,6 +58,18 @@ async function generatorCompare(data) {
     }
 }
 
+async function generatorHTML(html) {
+    try {
+        mkdir('./html/')
+        const url = `./html/${+new Date()}_html.html`
+        await writeFile(url, html, 'utf8')
+        console.log(html)
+        // c.exec(`start ${url}`)
+    } catch(e) {
+        console.log(e)
+    }
+}
+
 // 合并多个json数据文件
 // 顺便计算权重
 // TODO：从功能内聚的角度来讲，最好把计算权重的部分拆分出来，不过权重算法可能要调整
@@ -154,4 +166,5 @@ module.exports = {
     readJson,
     generatorReport,
     generatorCompare,
+    generatorHTML,
 }

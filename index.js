@@ -10,6 +10,7 @@ const rebuild2 = require('./src/runner/rebuild2');
 const getLeaf = require('./src/runner/getLeaf');
 const getSites = require('./src/runner/getSites');
 const compare = require('./src/runner/compare');
+const replace = require('./src/runner/replace');
 
 program
     .version('0.1.0')
@@ -24,6 +25,7 @@ program
     .option('-r, --getleaf', 'Add getleaf')
     .option('-g, --getsites', 'Add getsites')
     .option('-cpr, --compare', 'Add compare')
+    .option('-re, --replace', 'Add replace')
     .parse(process.argv);
 
 if(program.style) {
@@ -58,6 +60,9 @@ if(program.getsites) {
 }
 if(program.compare) {
     compare()
+}
+if(program.replace) {
+    replace()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();

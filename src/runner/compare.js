@@ -5,7 +5,7 @@ const saveImg = require('../util/saveImage');
 // parser的回调格式和node异步方法的回调格式一致，故可以用promisify
 const parser = require('html2hscript');
 const util = require('util');
-const { readJson, generatorCompare } = require('../util/localFs');
+const { readJson, generatorCompare, saveData } = require('../util/localFs');
 const { rebuildHTML } = require('../util/domTree');
 const { getLeafComponent } = require('../util/component');
 const { similarity } = require('../util/htmlSimilarity');
@@ -28,6 +28,7 @@ module.exports = async function () {
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         for (let site of list) {
+            const start = new Date();
             let i = 5;
             await driver.get('https://' + site);
             let node = await seg(driver, {
@@ -36,7 +37,7 @@ module.exports = async function () {
                 showBox: false,
             });
             const list = getLeafComponent(node);
-            const data = await readJson('../data/bootstrap-leafComponent');
+            const data = await readJson('../data/bootstrap-leafComponent-2');
             for (const i of list) {
                 let max = 0;
                 for (const j of data) {
@@ -47,7 +48,10 @@ module.exports = async function () {
                     }
                 }
             }
-            generatorCompare(list);
+            saveData('compare.json', list);
+            await generatorCompare(list);
+            const time = new Date() - start;
+            console.log(time / 1000 / 60);
         }
 
     } catch (e) {

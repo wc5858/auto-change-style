@@ -130,13 +130,15 @@ function searchNode(node) {
     }
     return {
         tagSequence,
-        classList,
+        classList: classList.filter(i => i !== 'bomwrapper'),
     };
 }
 
-function getLeafComponent(node) {
+function getLeafComponent(node, withHTML = true) {
     let map = new Map();
     let id = 0;
+
+    node.id = id;
 
     function helper(node, ancestor) {
         if (node.children) {
@@ -147,6 +149,7 @@ function getLeafComponent(node) {
                         map.delete(ancestor);
                     }
                     id += 1;
+                    i.id = id;
                     map.set(id, i);
                     helper(i, id);
                 } else {
@@ -160,7 +163,7 @@ function getLeafComponent(node) {
 
     return [...map.values()].map(node => ({
         node,
-        html: rebuildHTML(node),
+        html: withHTML ? rebuildHTML(node) : '',
         ...searchNode(node),
     }));
 }
