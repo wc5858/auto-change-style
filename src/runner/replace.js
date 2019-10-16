@@ -18,9 +18,10 @@ const list = [
     // 'www.google.com',
     // 'my.vultr.com',
     //'www.bilibili.com',
-    'github.com',
-    'www.cancer.gov',
-    'stackoverflow.com',
+    // 'github.com',
+    // 'www.cancer.gov',
+    // 'stackoverflow.com',
+    'www.getuikit.net/docs/pagination.html',
     // 'news.ycombinator.com'
 ];
 
@@ -81,7 +82,7 @@ module.exports = async function () {
             let driver = await new Builder().forBrowser('chrome').build();
             const start = new Date();
             let i = 5;
-            await driver.get('https://' + site);
+            await driver.get('http://' + site);
             let node = await seg(driver, {
                 pac: i,
                 returnType: 'wprima',
