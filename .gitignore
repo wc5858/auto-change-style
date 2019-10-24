@@ -76,3 +76,5 @@ typings/
 .fusebox/
 
 data/ant-leafComponent-2.json
+
+data/log-*

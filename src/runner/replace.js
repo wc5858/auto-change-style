@@ -5,7 +5,7 @@ const saveImg = require('../util/saveImage');
 // parser的回调格式和node异步方法的回调格式一致，故可以用promisify
 const parser = require('html2hscript');
 const util = require('util');
-const { readJson, generatorHTML } = require('../util/localFs');
+const { readJson, generatorHTML, saveData } = require('../util/localFs');
 const { rebuildHTML } = require('../util/domTree');
 const { getLeafComponent } = require('../util/component');
 const { similarity } = require('../util/htmlSimilarity');
@@ -60,6 +60,7 @@ function replaceNodeContents(node, source) {
         if (cur.children) {
             satck.push(...cur.children);
         } else {
+            console.log(source.texts)
             if (cur.type === 'text') {
                 cur.content = source.texts.shift() || '';
                 continue;
@@ -89,8 +90,9 @@ module.exports = async function () {
                 showBox: false,
             });
             const list = getLeafComponent(node);
-            const data = await readJson('../data/element-leafComponent-2');
+            const data = await readJson('../data/ant-leafComponent-2');
             const map = {}
+            const maxs = []
             for (const i of list) {
                 let max = 0;
                 for (const j of data) {
@@ -100,14 +102,23 @@ module.exports = async function () {
                         i.similarity = j;
                     }
                 }
-                map[i.node.id] = replaceNodeContents(i.similarity.node, searchNodeContents(i.node))
+                maxs.push(max);
+                // 执行一次深拷贝
+                const copyNode = JSON.parse(JSON.stringify(i.similarity.node));
+                map[i.node.id] = replaceNodeContents(copyNode, searchNodeContents(i.node));
             }
+
+            // 记录发生过的max值，方便后续优化
+            saveData(`log-maxs`, maxs);
+
+            const usedId = []
 
             function replaceNode(node) {
                 if (node.children) {
                     for (let i = 0; i < node.children.length; i++) {
                         const element = node.children[i];
                         if (element.id && map[element.id]) {
+                            usedId.push(element.id)
                             node.children[i] = map[element.id];
                         } else {
                             replaceNode(element);
@@ -118,6 +129,8 @@ module.exports = async function () {
             }
 
             replaceNode(node)
+
+            saveData(`log-usedId`, usedId);
 
             let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head>"
             html += rebuildHTML(node) + '</html>'

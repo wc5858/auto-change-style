@@ -14,7 +14,8 @@ const list = [
     // 'www.google.com',
     // 'my.vultr.com',
     //'www.bilibili.com',
-    'github.com',
+    // 'github.com',
+    'www.getuikit.net/docs/pagination.html',
     //'stackoverflow.com',
     // 'news.ycombinator.com'
 ]
@@ -36,7 +37,7 @@ module.exports = async function () {
         for (let site of list) {
             let i =1
             // for (let i = 1; i <= 10; i++) {
-                await driver.get('https://' + site);
+                await driver.get('http://' + site);
                 let data = await seg(driver, {
                     pac: i,
                     returnType : 'wprima'
