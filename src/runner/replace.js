@@ -15,12 +15,12 @@ const h = require('virtual-dom/h');
 const createElement = require("virtual-dom/create-element");
 
 const list = [
-    // 'www.google.com',
+    'www.google.com',
     // 'my.vultr.com',
     //'www.bilibili.com',
-    // 'github.com',
-    // 'www.cancer.gov',
-    // 'stackoverflow.com',
+    'github.com',
+    'www.cancer.gov',
+    'stackoverflow.com',
     'www.getuikit.net/docs/pagination.html',
     // 'news.ycombinator.com'
 ];
@@ -60,7 +60,6 @@ function replaceNodeContents(node, source) {
         if (cur.children) {
             satck.push(...cur.children);
         } else {
-            console.log(source.texts)
             if (cur.type === 'text') {
                 cur.content = source.texts.shift() || '';
                 continue;
@@ -90,7 +89,7 @@ module.exports = async function () {
                 showBox: false,
             });
             const list = getLeafComponent(node);
-            const data = await readJson('../data/ant-leafComponent-2');
+            const data = await readJson('../data/bootstrap-leafComponent-2');
             const map = {}
             const maxs = []
             for (const i of list) {
@@ -109,7 +108,7 @@ module.exports = async function () {
             }
 
             // 记录发生过的max值，方便后续优化
-            saveData(`log-maxs`, maxs);
+            saveData(`log-maxs-${site}-${+new Date()}`, maxs);
 
             const usedId = []
 
@@ -130,7 +129,7 @@ module.exports = async function () {
 
             replaceNode(node)
 
-            saveData(`log-usedId`, usedId);
+            saveData(`log-usedId-${site}-${+new Date()}`, usedId);
 
             let html = "<!DOCTYPE html><head><meta charset=\"utf-8\"></head>"
             html += rebuildHTML(node) + '</html>'

@@ -11,7 +11,7 @@ const list = [
         pages: ['alerts', 'badge', 'breadcrumb', 'buttons', 'button-group', 'card', 'carousel',
             'collapse', 'dropdowns', 'forms', 'input-group', 'jumbotron', 'list-group', 'media-object',
             'modal', 'navs', 'navbar', 'pagination', 'popovers', 'progress', 'scrollspy', 'spinners', 'toasts', 'tooltips'],
-        resolved: true
+        resolved: false
     },
     {
         site: 'github',
@@ -37,7 +37,7 @@ const list = [
             'dialog', 'tooltip', 'popover', 'card', 'carousel',
             'collapse', 'timeline', 'divider', 'calendar', 'image', 'backtop', 'infiniteScroll', 'drawer'
         ],
-        resolved: true
+        resolved: false
     },
     // [...document.getElementById('Components$Menu').querySelectorAll('.ant-menu-item a')].map(i => { const arr = i.href.split('/'); return arr[arr.length - 2]; })
     {
