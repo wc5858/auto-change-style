@@ -15,7 +15,7 @@ const h = require('virtual-dom/h');
 const createElement = require("virtual-dom/create-element");
 
 const list = [
-    'www.google.com',
+    // 'www.google.com',
     // 'my.vultr.com',
     //'www.bilibili.com',
     'github.com',
@@ -89,7 +89,7 @@ module.exports = async function () {
                 showBox: false,
             });
             const list = getLeafComponent(node);
-            const data = await readJson('../data/bootstrap-leafComponent-2');
+            const data = await readJson('../data/github-leafComponent-2');
             const map = {}
             const maxs = []
             for (const i of list) {

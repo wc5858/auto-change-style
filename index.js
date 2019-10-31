@@ -11,6 +11,7 @@ const getLeaf = require('./src/runner/getLeaf');
 const getSites = require('./src/runner/getSites');
 const compare = require('./src/runner/compare');
 const replace = require('./src/runner/replace');
+const optimization = require('./src/runner/optimization');
 
 program
     .version('0.1.0')
@@ -26,6 +27,7 @@ program
     .option('-g, --getsites', 'Add getsites')
     .option('-cpr, --compare', 'Add compare')
     .option('-re, --replace', 'Add replace')
+    .option('-o, --optimization', 'Add optimization')
     .parse(process.argv);
 
 if(program.style) {
@@ -63,6 +65,9 @@ if(program.compare) {
 }
 if(program.replace) {
     replace()
+}
+if(program.optimization) {
+    optimization()
 }
 // (async function example() {
 //     let driver = await new Builder().forBrowser('chrome').build();

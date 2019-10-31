@@ -11,7 +11,7 @@ const list = [
         pages: ['alerts', 'badge', 'breadcrumb', 'buttons', 'button-group', 'card', 'carousel',
             'collapse', 'dropdowns', 'forms', 'input-group', 'jumbotron', 'list-group', 'media-object',
             'modal', 'navs', 'navbar', 'pagination', 'popovers', 'progress', 'scrollspy', 'spinners', 'toasts', 'tooltips'],
-        resolved: false
+        resolved: true
     },
     {
         site: 'github',
@@ -37,7 +37,7 @@ const list = [
             'dialog', 'tooltip', 'popover', 'card', 'carousel',
             'collapse', 'timeline', 'divider', 'calendar', 'image', 'backtop', 'infiniteScroll', 'drawer'
         ],
-        resolved: false
+        resolved: true
     },
     // [...document.getElementById('Components$Menu').querySelectorAll('.ant-menu-item a')].map(i => { const arr = i.href.split('/'); return arr[arr.length - 2]; })
     {
@@ -64,6 +64,15 @@ const list = [
             "alert-cn", "drawer-cn", "modal-cn", "message-cn", 
             "notification-cn", "progress-cn", "popconfirm-cn", "result-cn", "spin-cn", "skeleton-cn", "anchor-cn", 
             "back-top-cn", "config-provider-cn", "divider-cn", "locale-provider-cn", "mention-cn",
+        ],
+        resolved: true
+    },
+    {
+        site: 'github',
+        protocol: 'https',
+        root: 'github.com/',
+        pages: [
+            "",
         ],
         resolved: false
     }

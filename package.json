@@ -16,6 +16,7 @@
     "getleaf": "node --max-old-space-size=4096 index --getleaf",
     "getsites": "node index --getsites",
     "replace": "node index --replace",
+    "opt": "node index --optimization",
     "compare": "node index --compare"
   },
   "author": "wc47501",
