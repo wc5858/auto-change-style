@@ -19,9 +19,9 @@ const list = [
     // 'my.vultr.com',
     //'www.bilibili.com',
     'github.com',
-    'www.cancer.gov',
-    'stackoverflow.com',
-    'www.getuikit.net/docs/pagination.html',
+    // 'www.cancer.gov',
+    // 'stackoverflow.com',
+    // 'www.getuikit.net/docs/pagination.html',
     // 'news.ycombinator.com'
 ];
 
@@ -41,7 +41,11 @@ function searchNodeContents(node) {
             continue;
         }
         if (cur.info.tag === 'IMG') {
-            contents.imgs.push(cur.info.src);
+            contents.imgs.push({
+                src: cur.info.src,
+                width: cur.info.css.width,
+                height: cur.info.css.height,
+            });
             continue;
         }
         if (cur.children) {
@@ -68,7 +72,14 @@ function replaceNodeContents(node, source) {
                 continue;
             }
             if (cur.info.tag === 'IMG') {
-                cur.info.src = source.imgs.shift() || '';
+                const img = source.imgs.shift();
+                console.log(JSON.stringify(img))
+                cur.info.src = img.src || '';
+                cur.info.css.width = img.width || '';
+                cur.info.css.height = img.height || '';
+                // 取消最大最小宽高度限制
+                cur.info.css['max-width'] = 'none';
+                cur.info.css['max-height'] = 'none';
                 continue;
             } 
         }
@@ -76,7 +87,10 @@ function replaceNodeContents(node, source) {
     return node;
 }
 
-module.exports = async function () {
+const t1 = 0.45;
+const t2 = 0.3;
+
+module.exports = async function (threshold1 = t1, threshold2 = t2) {
     try {
         for (let site of list) {
             let driver = await new Builder().forBrowser('chrome').build();
@@ -89,7 +103,7 @@ module.exports = async function () {
                 showBox: false,
             });
             const list = getLeafComponent(node);
-            const data = await readJson('../data/github-leafComponent-2');
+            const data = await readJson('../data/bootstrap-leafComponent-2');
             const map = {}
             const maxs = []
             for (const i of list) {
@@ -100,11 +114,18 @@ module.exports = async function () {
                         max = score;
                         i.similarity = j;
                     }
+                    // 找到合适的就不再继续查找
+                    if (max >= threshold1) {
+                        break;
+                    }
                 }
                 maxs.push(max);
-                // 执行一次深拷贝
-                const copyNode = JSON.parse(JSON.stringify(i.similarity.node));
-                map[i.node.id] = replaceNodeContents(copyNode, searchNodeContents(i.node));
+                // 找到匹配项大于这个阈值时才执行替换
+                if (max >= threshold2) {
+                    // 执行一次深拷贝
+                    const copyNode = JSON.parse(JSON.stringify(i.similarity.node));
+                    map[i.node.id] = replaceNodeContents(copyNode, searchNodeContents(i.node));
+                }
             }
 
             // 记录发生过的max值，方便后续优化

@@ -63,7 +63,7 @@ async function generatorHTML(html) {
         mkdir('./html/')
         const url = `./html/${+new Date()}_html.html`
         await writeFile(url, html, 'utf8')
-        console.log(html)
+        // console.log(html)
         // c.exec(`start ${url}`)
     } catch(e) {
         console.log(e)
