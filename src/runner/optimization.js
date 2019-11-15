@@ -4,6 +4,7 @@ const saveImg = require('../util/saveImage');
 const util = require('util');
 const fs = require("fs");
 const readFile = util.promisify(fs.readFile);
+const getJsData = require('../util/getJsData')
 
 const list = [
     // 'www.google.com',
@@ -14,27 +15,41 @@ const list = [
     // 'news.ycombinator.com'
 ]
 
-const style = 'bootstrap'
-
 
 
 
 module.exports = async function () {
     let driver = await new Builder().forBrowser('chrome').build();
-    let styleData = await readFile('./data/' + style + '.json')
-    styleData = JSON.parse(styleData)
+    // 注意这里使用getJsData不用getBundle，两者机制有区别
+    let bundle = getJsData(['./lib/tinyColor/tinycolor-min'], 'tinyColor');
     try {
         for (let site of list) {
             await driver.get('file:///C:/Users/%E7%8E%8B%E9%A9%B0%E7%8C%8B/Documents/GitHub/auto-change-style/html/github_element.html')
             await driver.executeScript(function () {
+                let data = arguments[0]
+                eval(data.bundle)
                 // 这部分代码是在浏览器里面执行的，只能通过executeScript传递参数进去执行
                 /*
                     规则1：宽度溢出，
                  */
+                function isElement(node) {
+                    return node ? node.nodeType == (Node.ELEMENT_NODE || 1) : false
+                }
                 function dealTree(node) {
                     if (!node.childNodes) {
                         return;
                     }
+                    // 颜色修复
+                    if (isElement(node)) {
+                        const bgColor = getComputedStyle(node).backgroundColor;
+                        const color = getComputedStyle(node).color;
+                        if (!tinycolor.isReadable(bgColor, color, {level:"AA",size:"small"})) {
+                            console.log(bgColor, color)
+                            node.style['-webkit-text-fill-color'] = 'red';
+                            node.style.color = 'red';
+                        }
+                    }
+                    // 溢出修复
                     setTimeout(() => {
                         const { scrollWidth, scrollHeight, clientWidth, clientHeight } = node;
                         //console.log(node.tagName, scrollWidth, scrollHeight, clientWidth, clientHeight)
@@ -91,7 +106,9 @@ module.exports = async function () {
                 }
                 dealTree(document.body)
                 return null
-            }, {}
+            }, {
+                bundle
+            }
             )
         }
 
